@@ -1,0 +1,199 @@
+/* ============================================
+   SUPER SECRET DONUTS — STYLESHEET
+   Layout: "The Tease"
+   ============================================ */
+
+/* ---- BRAND COLOR VARIABLES ---- */
+:root {
+  --magenta: #D4537E;
+  --cyan: #378ADD;
+  --yellow: #EF9F27;
+  --purple: #7F77DD;
+  --cream: #F4EFE3;
+  --charcoal: #2C2C2A;
+}
+
+/* ---- BASE STYLES ---- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--cream);
+  color: var(--charcoal);
+  font-family: 'Inter', sans-serif;
+  font-size: 20px;
+  line-height: 1.5;
+  overflow-x: hidden;
+}
+
+/* ---- NAVIGATION BAR ---- */
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 40px;
+  border-bottom: 1px solid rgba(44, 44, 42, 0.1);
+  background-color: var(--cream);
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo {
+  width: 50px;
+  height: 25px;
+}
+
+.wordmark {
+  font-family: 'Impact', 'Anton', 'Inter', sans-serif;
+  font-size: 18px;
+  letter-spacing: 1.5px;
+  color: var(--charcoal);
+}
+
+.nav-links {
+  display: flex;
+  gap: 32px;
+  list-style: none;
+}
+
+.nav-links a {
+  color: var(--charcoal);
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.nav-links a:hover {
+  color: var(--magenta);
+}
+
+.order-button {
+  background-color: var(--cyan);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 15px;
+  transition: background-color 0.2s ease;
+}
+
+.order-button:hover {
+  background-color: #2870BC;
+}
+
+/* ---- HERO ZONE ---- */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: calc(100vh - 80px);
+  padding: 60px 40px 60px 80px;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-text {
+  max-width: 600px;
+  z-index: 2;
+}
+
+.overline {
+  font-size: 16px;
+  color: var(--cyan);
+  letter-spacing: 2px;
+  margin-bottom: 80px;
+  font-weight: 500;
+}
+
+.arrow {
+  display: inline-block;
+  animation: bounce 2s ease-in-out infinite;
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(6px); }
+}
+
+.headline {
+  font-family: 'Impact', 'Anton', 'Inter', sans-serif;
+  font-size: 72px;
+  line-height: 1;
+  color: var(--charcoal);
+  letter-spacing: -1px;
+  margin-bottom: 24px;
+  animation: fadeIn 1.2s ease-out;
+}
+
+.subtitle {
+  font-size: 20px;
+  font-style: italic;
+  color: var(--cyan);
+  animation: fadeIn 1.6s ease-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* ---- HERO IMAGE (DONUT — CROPPED RIGHT) ---- */
+.hero-image {
+  position: absolute;
+  right: -25%;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 70%;
+  max-width: 800px;
+  z-index: 1;
+}
+
+.hero-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* ---- MOBILE RESPONSIVENESS ---- */
+@media (max-width: 768px) {
+  .nav {
+    flex-wrap: wrap;
+    padding: 16px 20px;
+    gap: 12px;
+  }
+
+  .nav-links {
+    order: 3;
+    width: 100%;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .hero {
+    flex-direction: column;
+    padding: 40px 20px;
+    text-align: left;
+  }
+
+  .headline {
+    font-size: 44px;
+  }
+
+  .hero-image {
+    position: relative;
+    right: auto;
+    top: auto;
+    transform: none;
+    width: 100%;
+    margin-top: 40px;
+  }
+}
