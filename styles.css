@@ -37,6 +37,9 @@ body {
   padding: 20px 40px;
   border-bottom: 1px solid rgba(44, 44, 42, 0.1);
   background-color: var(--cream);
+  position: sticky;
+  top: 0;
+  z-index: 100;
 }
 
 .nav-left {
@@ -146,7 +149,6 @@ body {
   to { opacity: 1; transform: translateY(0); }
 }
 
-/* ---- HERO IMAGE (DONUT — CROPPED RIGHT) ---- */
 .hero-image {
   position: absolute;
   right: -25%;
@@ -161,6 +163,75 @@ body {
   width: 100%;
   height: auto;
   display: block;
+}
+
+/* ============================================
+   ABOUT PREVIEW SECTION
+   ============================================ */
+
+.about-preview {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 80px;
+  padding: 120px 80px;
+  background-color: var(--cream);
+}
+
+.about-text {
+  flex: 1;
+  max-width: 540px;
+}
+
+.section-overline {
+  font-size: 14px;
+  color: var(--cyan);
+  letter-spacing: 3px;
+  margin-bottom: 24px;
+  font-weight: 500;
+}
+
+.section-headline {
+  font-family: 'Impact', 'Anton', 'Inter', sans-serif;
+  font-size: 56px;
+  line-height: 1;
+  color: var(--charcoal);
+  letter-spacing: -1px;
+  margin-bottom: 32px;
+}
+
+.section-body {
+  font-size: 20px;
+  line-height: 1.6;
+  color: var(--charcoal);
+  margin-bottom: 32px;
+}
+
+.text-link {
+  display: inline-block;
+  color: var(--cyan);
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.text-link:hover {
+  color: var(--magenta);
+  transform: translateX(4px);
+}
+
+.about-image {
+  flex: 1;
+  max-width: 500px;
+}
+
+.about-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 4px;
 }
 
 /* ---- MOBILE RESPONSIVENESS ---- */
@@ -195,5 +266,15 @@ body {
     transform: none;
     width: 100%;
     margin-top: 40px;
+  }
+
+  .about-preview {
+    flex-direction: column;
+    padding: 60px 20px;
+    gap: 40px;
+  }
+
+  .section-headline {
+    font-size: 36px;
   }
 }
