@@ -7,7 +7,7 @@
   --cyan: #378ADD;
   --yellow: #EF9F27;
   --purple: #7F77DD;
-  --cream: #F4EFE3;
+  --cream: #F9F4E8;
   --charcoal: #2C2C2A;
 }
 
@@ -234,7 +234,7 @@ body {
 
 .archive-preview {
   padding: 120px 80px;
-  background-color: var(--cream);
+  background-color: #EBF3FB;
   border-top: 1px solid rgba(44, 44, 42, 0.08);
 }
 
