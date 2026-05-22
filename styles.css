@@ -385,6 +385,171 @@ body {
   font-size: 17px;
 }
 
+/* ============================================
+   NEWSLETTER SIGNUP
+   ============================================ */
+
+.newsletter {
+  padding: 120px 80px;
+  background-color: #FAF3E0;
+  text-align: center;
+  border-top: 1px solid rgba(44, 44, 42, 0.08);
+}
+
+.newsletter-headline {
+  font-family: 'Impact', 'Anton', 'Inter', sans-serif;
+  font-size: 56px;
+  line-height: 1;
+  color: var(--charcoal);
+  letter-spacing: -1px;
+  margin-bottom: 16px;
+}
+
+.newsletter-subtitle {
+  font-size: 19px;
+  color: var(--charcoal);
+  max-width: 560px;
+  margin: 0 auto 40px auto;
+  line-height: 1.5;
+}
+
+.newsletter-form {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  max-width: 560px;
+  margin: 0 auto 16px auto;
+}
+
+.newsletter-input {
+  flex: 1;
+  padding: 14px 18px;
+  border: 2px solid var(--charcoal);
+  background-color: var(--cream);
+  color: var(--charcoal);
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  border-radius: 4px;
+  outline: none;
+  transition: border-color 0.2s ease;
+}
+
+.newsletter-input:focus {
+  border-color: var(--magenta);
+}
+
+.newsletter-input::placeholder {
+  color: rgba(44, 44, 42, 0.45);
+}
+
+.newsletter-button {
+  padding: 14px 24px;
+  background-color: var(--magenta);
+  color: white;
+  border: none;
+  font-family: 'Impact', 'Anton', 'Inter', sans-serif;
+  font-size: 16px;
+  letter-spacing: 1.5px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.newsletter-button:hover {
+  background-color: #B8426A;
+  transform: translateX(2px);
+}
+
+.newsletter-fineprint {
+  font-size: 14px;
+  font-style: italic;
+  color: rgba(44, 44, 42, 0.55);
+  margin-top: 8px;
+}
+
+/* ============================================
+   FOOTER
+   ============================================ */
+
+.footer {
+  background-color: var(--charcoal);
+  color: var(--cream);
+  padding: 80px 80px 32px 80px;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  gap: 64px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-bottom: 48px;
+  border-bottom: 1px solid rgba(244, 239, 227, 0.12);
+}
+
+.footer-brand .footer-logo {
+  width: 60px;
+  height: 30px;
+  margin-bottom: 16px;
+}
+
+.footer-wordmark {
+  font-family: 'Impact', 'Anton', 'Inter', sans-serif;
+  font-size: 20px;
+  letter-spacing: 1.5px;
+  color: var(--cream);
+  margin-bottom: 12px;
+}
+
+.footer-tagline {
+  font-size: 16px;
+  font-style: italic;
+  color: rgba(244, 239, 227, 0.7);
+}
+
+.footer-heading {
+  font-family: 'Impact', 'Anton', 'Inter', sans-serif;
+  font-size: 14px;
+  letter-spacing: 2px;
+  color: var(--magenta);
+  margin-bottom: 20px;
+}
+
+.footer-links {
+  list-style: none;
+}
+
+.footer-links li {
+  margin-bottom: 10px;
+}
+
+.footer-links a {
+  color: var(--cream);
+  text-decoration: none;
+  font-size: 15px;
+  transition: color 0.2s ease;
+}
+
+.footer-links a:hover {
+  color: var(--cyan);
+}
+
+.footer-info {
+  font-size: 15px;
+  line-height: 1.6;
+  color: rgba(244, 239, 227, 0.85);
+  margin-bottom: 16px;
+}
+
+.footer-bottom {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-top: 24px;
+  text-align: center;
+  font-size: 13px;
+  color: rgba(244, 239, 227, 0.5);
+}
+
 /* ---- MOBILE ---- */
 @media (max-width: 768px) {
   .nav {
@@ -446,5 +611,27 @@ body {
     flex-direction: column;
     padding: 60px 20px;
     gap: 40px;
+  }
+
+  .newsletter {
+    padding: 60px 20px;
+  }
+
+  .newsletter-headline {
+    font-size: 36px;
+  }
+
+  .newsletter-form {
+    flex-direction: column;
+  }
+
+  .footer {
+    padding: 60px 20px 24px 20px;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    padding-bottom: 32px;
   }
 }
