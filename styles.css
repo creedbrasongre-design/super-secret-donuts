@@ -163,6 +163,14 @@ body {
   animation: fadeIn 1.6s ease-out;
 }
 
+.hero-explainer {
+  font-size: 16px;
+  color: var(--charcoal);
+  margin-top: 24px;
+  letter-spacing: 0.5px;
+  animation: fadeIn 2s ease-out;
+}
+
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(10px); }
   to { opacity: 1; transform: translateY(0); }
