@@ -42,14 +42,15 @@ body {
 .donut-border {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   gap: 0;
-  padding: 6px 12px;
+  padding: 6px 0;
   background-color: var(--cream);
   position: sticky;
   top: 80px;
   z-index: 99;
   border-bottom: 1px solid rgba(44, 44, 42, 0.08);
+  overflow: hidden;
 }
 
 .donut-icon {
