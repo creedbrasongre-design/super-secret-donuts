@@ -875,6 +875,237 @@ body {
   font-style: italic;
 }
 
+/* ============================================
+   FIND US PAGE
+   ============================================ */
+
+.findus-page-hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 80px;
+  padding: 100px 80px;
+  background-color: var(--cream);
+}
+
+.findus-hero-text {
+  flex: 1;
+  max-width: 540px;
+}
+
+.findus-page-headline {
+  font-family: 'Impact', 'Anton', 'Inter', sans-serif;
+  font-size: 64px;
+  line-height: 1;
+  color: var(--charcoal);
+  letter-spacing: -1px;
+  margin: 16px 0 24px 0;
+}
+
+.findus-page-sub {
+  font-size: 20px;
+  line-height: 1.6;
+  color: var(--charcoal);
+  font-style: italic;
+  margin-bottom: 32px;
+}
+
+.findus-page-address {
+  border-top: 2px solid var(--charcoal);
+  padding-top: 20px;
+}
+
+.findus-info-text {
+  font-size: 19px;
+  line-height: 1.5;
+  color: var(--charcoal);
+}
+
+.findus-hero-image {
+  flex: 1;
+  max-width: 580px;
+}
+
+.findus-hero-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 4px;
+}
+
+.findus-map-section {
+  padding: 100px 80px;
+  background-color: #EBF3FB;
+  text-align: center;
+  border-top: 1px solid rgba(44, 44, 42, 0.08);
+}
+
+.findus-map-headline {
+  font-family: 'Impact', 'Anton', 'Inter', sans-serif;
+  font-size: 48px;
+  line-height: 1;
+  color: var(--charcoal);
+  letter-spacing: -1px;
+  margin: 16px 0 16px 0;
+}
+
+.findus-map-sub {
+  font-size: 18px;
+  color: var(--charcoal);
+  max-width: 640px;
+  margin: 0 auto 32px auto;
+  line-height: 1.5;
+}
+
+.map-embed {
+  max-width: 960px;
+  margin: 0 auto 24px auto;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(44, 44, 42, 0.1);
+}
+
+.map-embed iframe {
+  display: block;
+}
+
+.findus-hours-section {
+  padding: 100px 80px;
+  background-color: var(--cream);
+}
+
+.hours-content {
+  max-width: 720px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.findus-section-headline {
+  font-family: 'Impact', 'Anton', 'Inter', sans-serif;
+  font-size: 44px;
+  line-height: 1.05;
+  color: var(--charcoal);
+  letter-spacing: -1px;
+  margin: 16px 0 32px 0;
+}
+
+.hours-grid {
+  border-top: 2px solid var(--charcoal);
+  border-bottom: 2px solid var(--charcoal);
+  margin-bottom: 24px;
+  text-align: left;
+}
+
+.hours-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 14px 0;
+  border-bottom: 1px solid rgba(44, 44, 42, 0.1);
+}
+
+.hours-row:last-child {
+  border-bottom: none;
+}
+
+.hours-row-closed {
+  background-color: rgba(212, 83, 126, 0.05);
+}
+
+.hours-day {
+  font-family: 'Impact', 'Anton', 'Inter', sans-serif;
+  font-size: 17px;
+  letter-spacing: 2px;
+  color: var(--charcoal);
+}
+
+.hours-time {
+  font-size: 16px;
+  color: var(--magenta);
+  font-style: italic;
+}
+
+.hours-aside {
+  font-size: 17px;
+  font-style: italic;
+  color: var(--charcoal);
+  line-height: 1.5;
+}
+
+.findus-expect-section {
+  padding: 100px 80px;
+  background-color: #FBE8EF;
+  border-top: 1px solid rgba(44, 44, 42, 0.08);
+}
+
+.expect-content {
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.expect-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+  margin-top: 32px;
+  text-align: left;
+}
+
+.expect-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.expect-number {
+  font-family: 'Impact', 'Anton', 'Inter', sans-serif;
+  font-size: 40px;
+  color: var(--magenta);
+  margin-bottom: 10px;
+  line-height: 1;
+}
+
+.expect-headline {
+  font-family: 'Impact', 'Anton', 'Inter', sans-serif;
+  font-size: 18px;
+  letter-spacing: 2px;
+  color: var(--charcoal);
+  margin-bottom: 10px;
+}
+
+.expect-body {
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--charcoal);
+}
+
+.chalkboard-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 80px;
+  padding: 100px 80px;
+  background-color: var(--cream);
+  border-top: 1px solid rgba(44, 44, 42, 0.08);
+}
+
+.chalkboard-image {
+  flex: 1;
+  max-width: 560px;
+}
+
+.chalkboard-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 4px;
+}
+
+.chalkboard-text {
+  flex: 1;
+  max-width: 480px;
+}
+
 /* ---- MOBILE ---- */
 @media (max-width: 768px) {
   .nav {
@@ -1025,5 +1256,41 @@ body {
 
   .allergens {
     padding: 60px 20px;
+  }
+
+  .findus-page-hero {
+    flex-direction: column;
+    padding: 60px 20px;
+    gap: 40px;
+  }
+
+  .findus-page-headline {
+    font-size: 40px;
+  }
+
+  .findus-map-section,
+  .findus-hours-section,
+  .findus-expect-section,
+  .chalkboard-section {
+    padding: 60px 20px;
+  }
+
+  .findus-map-headline,
+  .findus-section-headline {
+    font-size: 32px;
+  }
+
+  .expect-grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .chalkboard-section {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .map-embed iframe {
+    height: 320px;
   }
 }
