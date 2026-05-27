@@ -1,5 +1,5 @@
 /* ============================================
-   SUPER SECRET DONUTS — STYLESHEET
+   SUPER SECRET DONUTS â€” STYLESHEET
    ============================================ */
 
 :root {
@@ -1106,202 +1106,6 @@ body {
   max-width: 480px;
 }
 
-/* ============================================
-   ORDER ONLINE PAGE
-   ============================================ */
-
-.order-hero {
-  text-align: center;
-  padding: 100px 80px 80px 80px;
-  background-color: var(--cream);
-}
-
-.order-hero-headline {
-  font-family: 'Impact', 'Anton', 'Inter', sans-serif;
-  font-size: 64px;
-  line-height: 1;
-  color: var(--charcoal);
-  letter-spacing: -1px;
-  margin: 16px 0 24px 0;
-}
-
-.order-hero-sub {
-  font-size: 20px;
-  line-height: 1.6;
-  color: var(--charcoal);
-  max-width: 720px;
-  margin: 0 auto;
-}
-
-.order-how-section {
-  padding: 100px 80px;
-  background-color: #EBF3FB;
-  border-top: 1px solid rgba(44, 44, 42, 0.08);
-}
-
-.order-how-content {
-  max-width: 1100px;
-  margin: 0 auto;
-  text-align: center;
-}
-
-.order-section-headline {
-  font-family: 'Impact', 'Anton', 'Inter', sans-serif;
-  font-size: 44px;
-  line-height: 1.05;
-  color: var(--charcoal);
-  letter-spacing: -1px;
-  margin: 16px 0 40px 0;
-}
-
-.order-steps-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 40px;
-  text-align: left;
-}
-
-.order-step {
-  display: flex;
-  flex-direction: column;
-}
-
-.order-ways-section {
-  padding: 100px 80px;
-  background-color: var(--cream);
-}
-
-.order-ways-content {
-  max-width: 1100px;
-  margin: 0 auto;
-  text-align: center;
-}
-
-.order-ways-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 32px;
-  margin-top: 16px;
-  text-align: left;
-}
-
-.order-way-card {
-  background-color: #FBE8EF;
-  padding: 32px 28px;
-  border-radius: 8px;
-  display: flex;
-  flex-direction: column;
-}
-
-.order-way-icon {
-  font-size: 32px;
-  color: var(--magenta);
-  margin-bottom: 12px;
-  line-height: 1;
-}
-
-.order-way-headline {
-  font-family: 'Impact', 'Anton', 'Inter', sans-serif;
-  font-size: 20px;
-  letter-spacing: 2px;
-  color: var(--charcoal);
-  margin-bottom: 12px;
-}
-
-.order-way-body {
-  font-size: 16px;
-  line-height: 1.6;
-  color: var(--charcoal);
-  margin-bottom: 16px;
-  flex: 1;
-}
-
-.order-way-link {
-  font-family: 'Impact', 'Anton', 'Inter', sans-serif;
-  font-size: 16px;
-  letter-spacing: 1px;
-  color: var(--magenta);
-  text-decoration: none;
-  transition: color 0.2s ease, transform 0.2s ease;
-  display: inline-block;
-  word-break: break-word;
-}
-
-.order-way-link:hover {
-  color: var(--charcoal);
-  transform: translateX(2px);
-}
-
-.order-custom-section {
-  padding: 100px 80px;
-  background-color: #FAF3E0;
-  border-top: 1px solid rgba(44, 44, 42, 0.08);
-}
-
-.order-custom-content {
-  max-width: 720px;
-  margin: 0 auto;
-  text-align: center;
-}
-
-.order-custom-body {
-  font-size: 18px;
-  line-height: 1.7;
-  color: var(--charcoal);
-  margin-bottom: 20px;
-}
-
-.inline-link {
-  color: var(--magenta);
-  text-decoration: none;
-  border-bottom: 1px solid var(--magenta);
-  transition: color 0.2s ease;
-}
-
-.inline-link:hover {
-  color: var(--charcoal);
-  border-bottom-color: var(--charcoal);
-}
-
-.order-faq-section {
-  padding: 100px 80px;
-  background-color: var(--cream);
-  border-top: 1px solid rgba(44, 44, 42, 0.08);
-}
-
-.order-faq-content {
-  max-width: 1000px;
-  margin: 0 auto;
-  text-align: center;
-}
-
-.faq-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 32px;
-  margin-top: 16px;
-  text-align: left;
-}
-
-.faq-item {
-  padding: 24px 0;
-  border-top: 1px solid rgba(44, 44, 42, 0.15);
-}
-
-.faq-question {
-  font-family: 'Impact', 'Anton', 'Inter', sans-serif;
-  font-size: 18px;
-  letter-spacing: 1px;
-  color: var(--magenta);
-  margin-bottom: 12px;
-}
-
-.faq-answer {
-  font-size: 16px;
-  line-height: 1.6;
-  color: var(--charcoal);
-}
-
 /* ---- MOBILE ---- */
 @media (max-width: 768px) {
   .nav {
@@ -1489,38 +1293,72 @@ body {
   .map-embed iframe {
     height: 320px;
   }
+}
 
-  .order-hero {
-    padding: 60px 20px;
-  }
+/* ============================================
+   ACCESSIBILITY â€” KEYBOARD FOCUS INDICATORS
+   ============================================
+   Uses :focus-visible so styles only appear for
+   keyboard navigation (Tab key), not mouse clicks.
+   Magenta outline matches brand palette. */
 
-  .order-hero-headline {
-    font-size: 40px;
-  }
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible,
+[tabindex]:focus-visible {
+  outline: 3px solid var(--magenta);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
 
-  .order-how-section,
-  .order-ways-section,
-  .order-custom-section,
-  .order-faq-section {
-    padding: 60px 20px;
-  }
+/* Newsletter input keeps its existing focus treatment
+   (border color change) but adds keyboard outline */
+.newsletter-input:focus-visible {
+  outline: 3px solid var(--magenta);
+  outline-offset: 3px;
+}
 
-  .order-section-headline {
-    font-size: 32px;
-  }
+/* Buttons with backgrounds get inset offset so the
+   outline reads cleanly against the button color */
+.order-button:focus-visible,
+.newsletter-button:focus-visible,
+.story-cta-button:focus-visible {
+  outline: 3px solid var(--magenta);
+  outline-offset: 4px;
+}
 
-  .order-steps-grid {
-    grid-template-columns: 1fr;
-    gap: 32px;
-  }
+/* Archive cards (image links) â€” show focus on the
+   whole card so keyboard users see where they are */
+.archive-card:focus-visible {
+  outline: 3px solid var(--magenta);
+  outline-offset: 4px;
+  border-radius: 4px;
+}
 
-  .order-ways-grid {
-    grid-template-columns: 1fr;
-    gap: 24px;
-  }
+/* Skip-to-content link â€” hidden until focused, then
+   appears at top-left. Lets keyboard/screen-reader
+   users skip past the nav on every page. */
+.skip-link {
+  position: absolute;
+  top: -100px;
+  left: 16px;
+  background-color: var(--magenta);
+  color: var(--cream);
+  padding: 12px 20px;
+  text-decoration: none;
+  font-family: 'Impact', 'Anton', 'Inter', sans-serif;
+  font-size: 16px;
+  letter-spacing: 1px;
+  z-index: 1000;
+  border-radius: 4px;
+  transition: top 0.2s;
+}
 
-  .faq-grid {
-    grid-template-columns: 1fr;
-    gap: 16px;
-  }
+.skip-link:focus,
+.skip-link:focus-visible {
+  top: 16px;
+  outline: 3px solid var(--cream);
+  outline-offset: 2px;
 }
