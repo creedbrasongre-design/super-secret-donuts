@@ -1,195 +1,175 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>The Story — Super Secret Donuts</title>
-  <link rel="stylesheet" href="styles.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>The Story — Super Secret Donuts</title>
+<link rel="stylesheet" href="styles.css" />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
 </head>
 <body>
+<a href="#main" class="skip-link">Skip to content</a>
+<!-- NAVIGATION BAR -->
+<nav class="nav">
+<div class="nav-left">
+<svg class="logo" viewBox="-2 -4 104 58" xmlns="http://www.w3.org/2000/svg" aria-label="Super Secret Donuts logo">
+<path d="M 12 25 Q 50 -2 88 25 Q 50 52 12 25 Z" fill="none" stroke="#D4537E" stroke-width="3" stroke-linejoin="round"/>
+<circle cx="50" cy="25" r="13.5" fill="none" stroke="#D4537E" stroke-width="3"/>
+<circle cx="50" cy="25" r="4.8" fill="#D4537E"/>
+</svg>
+<span class="wordmark">SUPER SECRET DONUTS</span>
+</div>
+<ul class="nav-links">
+<li><a href="index.html">Home</a></li>
+<li><a href="menu.html">Menu</a></li>
+<li><a href="story.html">Story</a></li>
+<li><a href="findus.html">Find Us</a></li>
+</ul>
+<a href="order.html" class="order-button">Order Online</a>
+</nav>
 
-  <!-- NAVIGATION BAR -->
-  <nav class="nav">
-    <div class="nav-left">
-      <svg class="logo" viewBox="-2 -4 104 58" xmlns="http://www.w3.org/2000/svg" aria-label="Super Secret Donuts logo">
-        <path d="M 12 25 Q 50 -2 88 25 Q 50 52 12 25 Z" fill="none" stroke="#D4537E" stroke-width="3" stroke-linejoin="round"/>
-        <circle cx="50" cy="25" r="13.5" fill="none" stroke="#D4537E" stroke-width="3"/>
-        <circle cx="50" cy="25" r="4.8" fill="#D4537E"/>
-      </svg>
-      <span class="wordmark">SUPER SECRET DONUTS</span>
-    </div>
-    <ul class="nav-links">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="menu.html">Menu</a></li>
-      <li><a href="story.html">Story</a></li>
-      <li><a href="findus.html">Find Us</a></li>
-    </ul>
-    <a href="order.html" class="order-button">Order Online</a>
-  </nav>
+<!-- DONUT BORDER STRIP -->
+<div class="donut-border" aria-hidden="true">
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+<defs>
+<g id="donut-mag"><circle cx="20" cy="20" r="16" fill="#D4537E"/><circle cx="20" cy="20" r="5" fill="#FFFDF7"/><rect x="10" y="11" width="3" height="1.2" rx="0.6" fill="#FFFDF7" transform="rotate(25 11.5 11.6)"/><rect x="26" y="14" width="3" height="1.2" rx="0.6" fill="#EF9F27" transform="rotate(-30 27.5 14.6)"/><rect x="14" y="28" width="3" height="1.2" rx="0.6" fill="#378ADD" transform="rotate(55 15.5 28.6)"/><rect x="25" y="26" width="3" height="1.2" rx="0.6" fill="#7F77DD" transform="rotate(-15 26.5 26.6)"/><rect x="9" y="22" width="3" height="1.2" rx="0.6" fill="#EF9F27" transform="rotate(70 10.5 22.6)"/></g>
+<g id="donut-cyan"><circle cx="20" cy="20" r="16" fill="#378ADD"/><circle cx="20" cy="20" r="5" fill="#FFFDF7"/><rect x="12" y="10" width="3" height="1.2" rx="0.6" fill="#FFFDF7" transform="rotate(-20 13.5 10.6)"/><rect x="27" y="16" width="3" height="1.2" rx="0.6" fill="#D4537E" transform="rotate(40 28.5 16.6)"/><rect x="11" y="25" width="3" height="1.2" rx="0.6" fill="#EF9F27" transform="rotate(-50 12.5 25.6)"/><rect x="24" y="28" width="3" height="1.2" rx="0.6" fill="#FFFDF7" transform="rotate(20 25.5 28.6)"/><rect x="28" y="22" width="3" height="1.2" rx="0.6" fill="#7F77DD" transform="rotate(-60 29.5 22.6)"/></g>
+<g id="donut-yel"><circle cx="20" cy="20" r="16" fill="#EF9F27"/><circle cx="20" cy="20" r="5" fill="#FFFDF7"/><rect x="11" y="13" width="3" height="1.2" rx="0.6" fill="#D4537E" transform="rotate(35 12.5 13.6)"/><rect x="25" y="11" width="3" height="1.2" rx="0.6" fill="#378ADD" transform="rotate(-25 26.5 11.6)"/><rect x="13" y="27" width="3" height="1.2" rx="0.6" fill="#7F77DD" transform="rotate(60 14.5 27.6)"/><rect x="26" y="25" width="3" height="1.2" rx="0.6" fill="#FFFDF7" transform="rotate(-10 27.5 25.6)"/><rect x="9" y="20" width="3" height="1.2" rx="0.6" fill="#D4537E" transform="rotate(75 10.5 20.6)"/></g>
+<g id="donut-pur"><circle cx="20" cy="20" r="16" fill="#7F77DD"/><circle cx="20" cy="20" r="5" fill="#FFFDF7"/><rect x="13" y="10" width="3" height="1.2" rx="0.6" fill="#EF9F27" transform="rotate(-30 14.5 10.6)"/><rect x="27" y="14" width="3" height="1.2" rx="0.6" fill="#FFFDF7" transform="rotate(25 28.5 14.6)"/><rect x="10" y="24" width="3" height="1.2" rx="0.6" fill="#D4537E" transform="rotate(-55 11.5 24.6)"/><rect x="25" y="27" width="3" height="1.2" rx="0.6" fill="#378ADD" transform="rotate(15 26.5 27.6)"/><rect x="28" y="21" width="3" height="1.2" rx="0.6" fill="#EF9F27" transform="rotate(-65 29.5 21.6)"/></g>
+</defs>
+</svg>
+<svg class="donut-icon" viewBox="0 0 40 40"><use href="#donut-mag"/></svg>
+<svg class="donut-icon" viewBox="0 0 40 40"><use href="#donut-cyan"/></svg>
+<svg class="donut-icon" viewBox="0 0 40 40"><use href="#donut-yel"/></svg>
+<svg class="donut-icon" viewBox="0 0 40 40"><use href="#donut-pur"/></svg>
+<svg class="donut-icon" viewBox="0 0 40 40"><use href="#donut-mag"/></svg>
+<svg class="donut-icon" viewBox="0 0 40 40"><use href="#donut-cyan"/></svg>
+<svg class="donut-icon" viewBox="0 0 40 40"><use href="#donut-yel"/></svg>
+<svg class="donut-icon" viewBox="0 0 40 40"><use href="#donut-pur"/></svg>
+<svg class="donut-icon" viewBox="0 0 40 40"><use href="#donut-mag"/></svg>
+<svg class="donut-icon" viewBox="0 0 40 40"><use href="#donut-cyan"/></svg>
+<svg class="donut-icon" viewBox="0 0 40 40"><use href="#donut-yel"/></svg>
+<svg class="donut-icon" viewBox="0 0 40 40"><use href="#donut-pur"/></svg>
+<svg class="donut-icon" viewBox="0 0 40 40"><use href="#donut-mag"/></svg>
+<svg class="donut-icon" viewBox="0 0 40 40"><use href="#donut-cyan"/></svg>
+<svg class="donut-icon" viewBox="0 0 40 40"><use href="#donut-yel"/></svg>
+<svg class="donut-icon" viewBox="0 0 40 40"><use href="#donut-pur"/></svg>
+<svg class="donut-icon" viewBox="0 0 40 40"><use href="#donut-mag"/></svg>
+<svg class="donut-icon" viewBox="0 0 40 40"><use href="#donut-cyan"/></svg>
+<svg class="donut-icon" viewBox="0 0 40 40"><use href="#donut-yel"/></svg>
+<svg class="donut-icon" viewBox="0 0 40 40"><use href="#donut-pur"/></svg>
+<svg class="donut-icon" viewBox="0 0 40 40"><use href="#donut-mag"/></svg>
+<svg class="donut-icon" viewBox="0 0 40 40"><use href="#donut-cyan"/></svg>
+<svg class="donut-icon" viewBox="0 0 40 40"><use href="#donut-yel"/></svg>
+<svg class="donut-icon" viewBox="0 0 40 40"><use href="#donut-pur"/></svg>
+<svg class="donut-icon" viewBox="0 0 40 40"><use href="#donut-mag"/></svg>
+<svg class="donut-icon" viewBox="0 0 40 40"><use href="#donut-cyan"/></svg>
+<svg class="donut-icon" viewBox="0 0 40 40"><use href="#donut-yel"/></svg>
+<svg class="donut-icon" viewBox="0 0 40 40"><use href="#donut-pur"/></svg>
+<svg class="donut-icon" viewBox="0 0 40 40"><use href="#donut-mag"/></svg>
+<svg class="donut-icon" viewBox="0 0 40 40"><use href="#donut-cyan"/></svg>
+<svg class="donut-icon" viewBox="0 0 40 40"><use href="#donut-yel"/></svg>
+<svg class="donut-icon" viewBox="0 0 40 40"><use href="#donut-pur"/></svg>
+</div>
 
-  <!-- DONUT BORDER STRIP -->
-  <div class="donut-border" aria-hidden="true">
-    <svg width="0" height="0" style="position:absolute" aria-hidden="true">
-      <defs>
-        <g id="donut-mag"><circle cx="20" cy="20" r="16" fill="#D4537E"/><circle cx="20" cy="20" r="5" fill="#FFFDF7"/><rect x="10" y="11" width="3" height="1.2" rx="0.6" fill="#FFFDF7" transform="rotate(25 11.5 11.6)"/><rect x="26" y="14" width="3" height="1.2" rx="0.6" fill="#EF9F27" transform="rotate(-30 27.5 14.6)"/><rect x="14" y="28" width="3" height="1.2" rx="0.6" fill="#378ADD" transform="rotate(55 15.5 28.6)"/><rect x="25" y="26" width="3" height="1.2" rx="0.6" fill="#7F77DD" transform="rotate(-15 26.5 26.6)"/><rect x="9" y="22" width="3" height="1.2" rx="0.6" fill="#EF9F27" transform="rotate(70 10.5 22.6)"/></g>
-        <g id="donut-cyan"><circle cx="20" cy="20" r="16" fill="#378ADD"/><circle cx="20" cy="20" r="5" fill="#FFFDF7"/><rect x="12" y="10" width="3" height="1.2" rx="0.6" fill="#FFFDF7" transform="rotate(-20 13.5 10.6)"/><rect x="27" y="16" width="3" height="1.2" rx="0.6" fill="#D4537E" transform="rotate(40 28.5 16.6)"/><rect x="11" y="25" width="3" height="1.2" rx="0.6" fill="#EF9F27" transform="rotate(-50 12.5 25.6)"/><rect x="24" y="28" width="3" height="1.2" rx="0.6" fill="#FFFDF7" transform="rotate(20 25.5 28.6)"/><rect x="28" y="22" width="3" height="1.2" rx="0.6" fill="#7F77DD" transform="rotate(-60 29.5 22.6)"/></g>
-        <g id="donut-yel"><circle cx="20" cy="20" r="16" fill="#EF9F27"/><circle cx="20" cy="20" r="5" fill="#FFFDF7"/><rect x="11" y="13" width="3" height="1.2" rx="0.6" fill="#D4537E" transform="rotate(35 12.5 13.6)"/><rect x="25" y="11" width="3" height="1.2" rx="0.6" fill="#378ADD" transform="rotate(-25 26.5 11.6)"/><rect x="13" y="27" width="3" height="1.2" rx="0.6" fill="#7F77DD" transform="rotate(60 14.5 27.6)"/><rect x="26" y="25" width="3" height="1.2" rx="0.6" fill="#FFFDF7" transform="rotate(-10 27.5 25.6)"/><rect x="9" y="20" width="3" height="1.2" rx="0.6" fill="#D4537E" transform="rotate(75 10.5 20.6)"/></g>
-        <g id="donut-pur"><circle cx="20" cy="20" r="16" fill="#7F77DD"/><circle cx="20" cy="20" r="5" fill="#FFFDF7"/><rect x="13" y="10" width="3" height="1.2" rx="0.6" fill="#EF9F27" transform="rotate(-30 14.5 10.6)"/><rect x="27" y="14" width="3" height="1.2" rx="0.6" fill="#FFFDF7" transform="rotate(25 28.5 14.6)"/><rect x="10" y="24" width="3" height="1.2" rx="0.6" fill="#D4537E" transform="rotate(-55 11.5 24.6)"/><rect x="25" y="27" width="3" height="1.2" rx="0.6" fill="#378ADD" transform="rotate(15 26.5 27.6)"/><rect x="28" y="21" width="3" height="1.2" rx="0.6" fill="#EF9F27" transform="rotate(-65 29.5 21.6)"/></g>
-      </defs>
-    </svg>
-    <svg class="donut-icon" viewBox="0 0 40 40"><use href="#donut-mag"/></svg>
-    <svg class="donut-icon" viewBox="0 0 40 40"><use href="#donut-cyan"/></svg>
-    <svg class="donut-icon" viewBox="0 0 40 40"><use href="#donut-yel"/></svg>
-    <svg class="donut-icon" viewBox="0 0 40 40"><use href="#donut-pur"/></svg>
-    <svg class="donut-icon" viewBox="0 0 40 40"><use href="#donut-mag"/></svg>
-    <svg class="donut-icon" viewBox="0 0 40 40"><use href="#donut-cyan"/></svg>
-    <svg class="donut-icon" viewBox="0 0 40 40"><use href="#donut-yel"/></svg>
-    <svg class="donut-icon" viewBox="0 0 40 40"><use href="#donut-pur"/></svg>
-    <svg class="donut-icon" viewBox="0 0 40 40"><use href="#donut-mag"/></svg>
-    <svg class="donut-icon" viewBox="0 0 40 40"><use href="#donut-cyan"/></svg>
-    <svg class="donut-icon" viewBox="0 0 40 40"><use href="#donut-yel"/></svg>
-    <svg class="donut-icon" viewBox="0 0 40 40"><use href="#donut-pur"/></svg>
-    <svg class="donut-icon" viewBox="0 0 40 40"><use href="#donut-mag"/></svg>
-    <svg class="donut-icon" viewBox="0 0 40 40"><use href="#donut-cyan"/></svg>
-    <svg class="donut-icon" viewBox="0 0 40 40"><use href="#donut-yel"/></svg>
-    <svg class="donut-icon" viewBox="0 0 40 40"><use href="#donut-pur"/></svg>
-    <svg class="donut-icon" viewBox="0 0 40 40"><use href="#donut-mag"/></svg>
-    <svg class="donut-icon" viewBox="0 0 40 40"><use href="#donut-cyan"/></svg>
-    <svg class="donut-icon" viewBox="0 0 40 40"><use href="#donut-yel"/></svg>
-    <svg class="donut-icon" viewBox="0 0 40 40"><use href="#donut-pur"/></svg>
-    <svg class="donut-icon" viewBox="0 0 40 40"><use href="#donut-mag"/></svg>
-    <svg class="donut-icon" viewBox="0 0 40 40"><use href="#donut-cyan"/></svg>
-    <svg class="donut-icon" viewBox="0 0 40 40"><use href="#donut-yel"/></svg>
-    <svg class="donut-icon" viewBox="0 0 40 40"><use href="#donut-pur"/></svg>
-    <svg class="donut-icon" viewBox="0 0 40 40"><use href="#donut-mag"/></svg>
-    <svg class="donut-icon" viewBox="0 0 40 40"><use href="#donut-cyan"/></svg>
-    <svg class="donut-icon" viewBox="0 0 40 40"><use href="#donut-yel"/></svg>
-    <svg class="donut-icon" viewBox="0 0 40 40"><use href="#donut-pur"/></svg>
-    <svg class="donut-icon" viewBox="0 0 40 40"><use href="#donut-mag"/></svg>
-    <svg class="donut-icon" viewBox="0 0 40 40"><use href="#donut-cyan"/></svg>
-    <svg class="donut-icon" viewBox="0 0 40 40"><use href="#donut-yel"/></svg>
-    <svg class="donut-icon" viewBox="0 0 40 40"><use href="#donut-pur"/></svg>
-  </div>
+<!-- HERO -->
+<section class="story-hero" id="main">
+<div class="story-hero-text">
+<p class="section-overline">THE STORY</p>
+<h1 class="story-hero-headline">A NEW FLAVOR. EVERY WEEK. FOR TULSA.</h1>
+<p class="story-hero-sub">Milton spent years dreaming about a gourmet donut shop. He moved to Tulsa and finally built it.</p>
+</div>
+<div class="story-hero-image">
+<img src="founder.jpg" alt="Milton Perry, founder of Super Secret Donuts, smiling and holding a tray of glazed donuts" />
+</div>
+</section>
 
-  <!-- PAGE HERO -->
-  <section class="story-hero">
-    <div class="story-hero-text">
-      <p class="section-overline">THE STORY</p>
-      <h1 class="story-hero-headline">FROM TULSA, WITH SECRETS.</h1>
-      <p class="story-hero-sub">Milton Perry left home, learned to bake in California, and came back to make something Tulsa didn't have yet.</p>
-    </div>
-    <div class="story-hero-image">
-      <img src="founder.jpg" alt="Milton Perry, founder of Super Secret Donuts, smiling and holding a tray of glazed donuts" />
-    </div>
-  </section>
+<!-- JOURNEY -->
+<section class="story-section">
+<div class="story-content">
+<p class="section-overline">THE JOURNEY</p>
+<h2 class="story-section-headline">HOW IT STARTED.</h2>
+<p class="story-body">About ten years ago, Milton was living in California, watching the gourmet donut scene take off in cities like LA, Portland, and Nashville. He started sketching flavor ideas, names, logos &mdash; even though he&rsquo;d never made a donut in his life. He calls himself a cook, not a baker.</p>
+<p class="story-body">He sat on the idea through California, then Hawai&rsquo;i. In February, he and his wife moved to Tulsa &mdash; and pretty quickly he noticed the city didn&rsquo;t have the kind of gourmet donut shop he kept picturing.</p>
+<p class="story-body">So he started one. First in his father-in-law&rsquo;s garage in Broken Arrow, frying brioche on a Camp Chef stove while the wind flared the flames. Then Mother Road Market&rsquo;s Kitchen 66. Now an airstream, a line by 7 AM, and a new flavor every Friday.</p>
+<p class="story-pullquote">&ldquo;I just made the doughnut shop I wanted.&rdquo;</p>
+</div>
+</section>
 
-  <!-- THE JOURNEY -->
-  <section class="story-section">
-    <div class="story-content">
-      <p class="section-overline">THE JOURNEY</p>
-      <h2 class="story-section-headline">HE LEFT. HE LEARNED. HE CAME HOME.</h2>
-      <p class="story-body">
-        Milton grew up in Tulsa, but moved to California to chase a career as a chef. He spent years in professional kitchens, learning the discipline of pastry from people who took it seriously. Bread. Brioche. Laminated dough. The kind of craft that takes years to feel in your hands.
-      </p>
-      <p class="story-body">
-        Then he came back.
-      </p>
-      <blockquote class="story-pullquote">
-        &ldquo;I wanted to make something my hometown didn't have yet. Not a chain. Not a copy. Something built here, for here.&rdquo;
-      </blockquote>
-      <p class="story-body">
-        He started small &mdash; a single airstream parked at Mother Road Market on the weekends. Brioche donuts, made from scratch. New flavors every Friday. By 10 AM, sold out. The line grew. Then the line *kept* growing.
-      </p>
-    </div>
-  </section>
+<!-- PHILOSOPHY -->
+<section class="story-section story-section-tinted">
+<div class="story-content">
+<p class="section-overline">THE PHILOSOPHY</p>
+<h2 class="story-section-headline">WHY THE SECRETS?</h2>
+<p class="story-body">Most donut shops have a menu. Same twelve flavors. Same Sunday morning. A lot of them rip open a bag of premix, add water, and call it a donut.</p>
+<p class="story-body">Super Secret doesn&rsquo;t work that way. Every Friday, the secret changes. Some come back. Most don&rsquo;t. Milton sees a dessert, a memory, a person &mdash; and thinks <em>how do I make that a donut?</em></p>
+<p class="story-pullquote">&ldquo;If I told you, it wouldn&rsquo;t be a secret. I&rsquo;ll never tell. I&rsquo;ll take it to the grave.&rdquo;</p>
+</div>
+</section>
 
-  <!-- THE PHILOSOPHY -->
-  <section class="story-section story-section-tinted">
-    <div class="story-content">
-      <p class="section-overline">THE PHILOSOPHY</p>
-      <h2 class="story-section-headline">WHY THE SECRETS?</h2>
-      <p class="story-body">
-        Most donut shops have a menu. Same twelve flavors. Same boxes. Same Sunday morning.
-      </p>
-      <p class="story-body">
-        Super Secret doesn't work that way. Every week, the menu changes. Sometimes a flavor returns. Sometimes it never does. We're not trying to be the donut shop you can predict &mdash; we're trying to be the one you remember.
-      </p>
-      <blockquote class="story-pullquote">
-        &ldquo;The fun isn't knowing what you're getting. It's showing up to find out.&rdquo;
-      </blockquote>
-      <p class="story-body">
-        It's a small protest against the corporate machine &mdash; the chains, the predictability, the sameness. We're a local shop built on creativity, made by hand, and gone by lunch.
-      </p>
-    </div>
-  </section>
+<!-- PROCESS -->
+<section class="story-section">
+<div class="story-content-wide">
+<div class="story-text-col">
+<p class="section-overline">THE PROCESS</p>
+<h2 class="story-section-headline">SCRATCH-MADE. ALWAYS.</h2>
+<p class="story-body">Every donut starts the night before. Brioche dough &mdash; flour, butter, eggs, time &mdash; rests until morning. Hand-shaped, fried fresh, glazed before the doors open. The icings, buttercreams, caramels &mdash; all from scratch.</p>
+<p class="story-body">The two classics that anchor the menu are named after Milton&rsquo;s sons, Zi and Eevee. Everything else changes when inspiration does.</p>
+<p class="story-pullquote">&ldquo;I love to express creativity. A normal desk job &mdash; I would not thrive in that.&rdquo;</p>
+</div>
+<div class="story-image-col">
+<img src="process.jpg" alt="Hands kneading brioche dough on a flour-dusted counter" />
+</div>
+</div>
+</section>
 
-  <!-- THE PROCESS -->
-  <section class="story-section">
-    <div class="story-content-wide">
-      <div class="story-text-col">
-        <p class="section-overline">THE PROCESS</p>
-        <h2 class="story-section-headline">EVERYTHING, FROM SCRATCH.</h2>
-        <p class="story-body">
-          Every donut starts the night before. Brioche dough &mdash; flour, butter, eggs, time &mdash; rests until morning. It gets shaped by hand, fried fresh, and glazed once before the doors open.
-        </p>
-        <p class="story-body">
-          Nothing here is pre-made. Nothing comes from a box. The flavors change because Milton makes them change &mdash; from his head, his hands, and whatever inspired him that week.
-        </p>
-      </div>
-      <div class="story-image-col">
-        <img src="process.jpg" alt="Hands kneading brioche dough on a flour-dusted counter" />
-      </div>
-    </div>
-  </section>
+<!-- CTA -->
+<section class="story-cta">
+<h2 class="story-cta-headline">WANT IN ON THE SECRET?</h2>
+<p class="story-cta-sub">Friday morning. The airstream opens. We won&rsquo;t tell you what it is &mdash; but you&rsquo;ll want one.</p>
+<a href="index.html" class="story-cta-button">SEE THIS WEEK&rsquo;S DROP &rarr;</a>
+</section>
 
-  <!-- COMING BACK TO HOME -->
-  <section class="story-cta">
-    <h2 class="story-cta-headline">WANT IN ON THE SECRET?</h2>
-    <p class="story-cta-sub">Friday morning. The airstream opens. We're not telling you what it is &mdash; but you'll want one.</p>
-    <a href="index.html" class="story-cta-button">SEE THIS WEEK'S DROP &rarr;</a>
-  </section>
-
-  <!-- FOOTER -->
-  <footer class="footer">
-    <div class="footer-grid">
-      <div class="footer-brand">
-        <svg class="footer-logo" viewBox="-2 -4 104 58" xmlns="http://www.w3.org/2000/svg" aria-label="Super Secret Donuts logo">
-          <path d="M 12 25 Q 50 -2 88 25 Q 50 52 12 25 Z" fill="none" stroke="#D4537E" stroke-width="3" stroke-linejoin="round"/>
-          <circle cx="50" cy="25" r="13.5" fill="none" stroke="#D4537E" stroke-width="3"/>
-          <circle cx="50" cy="25" r="4.8" fill="#D4537E"/>
-        </svg>
-        <p class="footer-wordmark">SUPER SECRET DONUTS</p>
-        <p class="footer-tagline">Tulsa's worst-kept secret.</p>
-      </div>
-      <div class="footer-column">
-        <p class="footer-heading">EXPLORE</p>
-        <ul class="footer-links">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="menu.html">Menu</a></li>
-          <li><a href="story.html">Story</a></li>
-          <li><a href="findus.html">Find Us</a></li>
-          <li><a href="order.html">Order Online</a></li>
-        </ul>
-      </div>
-      <div class="footer-column">
-        <p class="footer-heading">VISIT</p>
-        <p class="footer-info">Mother Road Market<br/>1124 S Lewis Ave<br/>Tulsa, OK 74104</p>
-        <p class="footer-info">Friday &ndash; Sunday<br/>7:00 AM &ndash; Sold out</p>
-      </div>
-      <div class="footer-column">
-        <p class="footer-heading">FOLLOW</p>
-        <ul class="footer-links">
-          <li><a href="https://www.instagram.com/ssdtulsa/" target="_blank" rel="noopener">Instagram</a></li>
-          <li><a href="https://www.facebook.com/p/Super-Secret-Donuts-Tulsa-61566325681007/" target="_blank" rel="noopener">Facebook</a></li>
-          <li><a href="https://www.tiktok.com/@supersecretdonuts" target="_blank" rel="noopener">TikTok</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <p>&copy; 2026 Super Secret Donuts. All secrets reserved.</p>
-    </div>
-  </footer>
+<!-- FOOTER -->
+<footer class="footer">
+<div class="footer-grid">
+<div class="footer-brand">
+<svg class="footer-logo" viewBox="-2 -4 104 58" xmlns="http://www.w3.org/2000/svg" aria-label="Super Secret Donuts logo">
+<path d="M 12 25 Q 50 -2 88 25 Q 50 52 12 25 Z" fill="none" stroke="#D4537E" stroke-width="3" stroke-linejoin="round"/>
+<circle cx="50" cy="25" r="13.5" fill="none" stroke="#D4537E" stroke-width="3"/>
+<circle cx="50" cy="25" r="4.8" fill="#D4537E"/>
+</svg>
+<p class="footer-wordmark">SUPER SECRET DONUTS</p>
+<p class="footer-tagline">Tulsa&rsquo;s worst-kept secret.</p>
+</div>
+<div class="footer-column">
+<p class="footer-heading">EXPLORE</p>
+<ul class="footer-links">
+<li><a href="index.html">Home</a></li>
+<li><a href="menu.html">Menu</a></li>
+<li><a href="story.html">Story</a></li>
+<li><a href="findus.html">Find Us</a></li>
+<li><a href="order.html">Order Online</a></li>
+</ul>
+</div>
+<div class="footer-column">
+<p class="footer-heading">VISIT</p>
+<p class="footer-info">Mother Road Market<br/>1124 S Lewis Ave<br/>Tulsa, OK 74104</p>
+<p class="footer-info">Friday &ndash; Sunday<br/>7:00 AM &ndash; Sold out</p>
+</div>
+<div class="footer-column">
+<p class="footer-heading">FOLLOW</p>
+<ul class="footer-links">
+<li><a href="https://www.instagram.com/ssdtulsa/" target="_blank" rel="noopener">Instagram</a></li>
+<li><a href="https://www.facebook.com/p/Super-Secret-Donuts-Tulsa-61566325681007/" target="_blank" rel="noopener">Facebook</a></li>
+<li><a href="https://www.tiktok.com/@supersecretdonuts" target="_blank" rel="noopener">TikTok</a></li>
+</ul>
+</div>
+</div>
+<div class="footer-bottom">
+<p>&copy; 2026 Super Secret Donuts. All secrets reserved.</p>
+</div>
+</footer>
 
 </body>
 </html>
