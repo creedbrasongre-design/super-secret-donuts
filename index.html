@@ -20,18 +20,61 @@
   height: 100%;
   pointer-events: none;
   z-index: 0;
-  opacity: 0.5;
-}
-.hero-text, .hero-image {
-  z-index: 2;
+  opacity: 0.85;
 }
 .hero-text {
   position: relative;
+  z-index: 2;
+}
+.hero-image {
+  z-index: 2;
 }
 
 /* Hero donut — slight tilt */
 .hero-image img {
   transform: rotate(-1deg);
+}
+
+/* Hero brand line — Caveat magenta, sits above the eyebrow */
+.hero-brand-line {
+  font-family: 'Caveat', cursive;
+  font-size: 42px;
+  font-weight: 700;
+  color: var(--magenta);
+  line-height: 1;
+  margin-bottom: 24px;
+}
+
+/* Tighten overline spacing since brand line sits above */
+.hero-text .overline {
+  margin-bottom: 20px;
+}
+
+/* Hero subtitle — handwritten Caveat */
+.hero-text .subtitle {
+  font-family: 'Caveat', cursive;
+  font-size: 28px;
+  font-style: normal;
+  color: var(--cyan);
+}
+
+/* Hero CTA button */
+.hero-cta {
+  display: inline-block;
+  margin-top: 28px;
+  padding: 14px 26px;
+  background-color: var(--magenta);
+  color: var(--cream);
+  text-decoration: none;
+  font-family: 'Impact', 'Anton', 'Inter', sans-serif;
+  font-size: 16px;
+  letter-spacing: 2px;
+  border-radius: 4px;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+.hero-cta:hover {
+  background-color: #B8426A;
+  transform: translateX(4px);
 }
 
 /* About section — warm cream background, image flipped LEFT */
@@ -73,41 +116,9 @@
   max-width: 580px;
 }
 
-/* Tagline band between Hero and About */
-.tagline-band {
-  background-color: var(--cream);
-  padding: 32px 40px;
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 24px;
-}
-.tagline-band .tagline-text {
-  font-family: 'Caveat', cursive;
-  font-size: 38px;
-  color: var(--magenta);
-  font-weight: 700;
-  line-height: 1;
-}
-.tagline-band .tagline-rule {
-  flex: 1;
-  max-width: 120px;
-  height: 2px;
-  background-color: var(--magenta);
-  opacity: 0.3;
-}
-
 /* Classics section — soft magenta tint */
 .classics-section {
   background-color: #FCF0F5 !important;
-}
-
-/* Whimsical accent on hero subtitle */
-.hero-text .subtitle {
-  font-family: 'Caveat', cursive;
-  font-size: 32px;
-  font-style: normal;
 }
 
 /* Mystery tile for "This Week's Secret" in Classics grid */
@@ -129,17 +140,11 @@
   .about-preview {
     flex-direction: column !important;
   }
-  .tagline-band {
-    flex-direction: column;
-    gap: 12px;
-    padding: 24px 20px;
+  .hero-brand-line {
+    font-size: 32px;
   }
-  .tagline-band .tagline-text {
-    font-size: 30px;
-  }
-  .tagline-band .tagline-rule {
-    width: 80px;
-    max-width: 80px;
+  .hero-text .subtitle {
+    font-size: 22px;
   }
   .about-image .polaroid,
   .findus-image .polaroid {
@@ -150,7 +155,7 @@
     transform: rotate(1deg);
   }
   .hero-sprinkles {
-    opacity: 0.35;
+    opacity: 0.6;
   }
 }
 </style>
@@ -237,24 +242,47 @@
 <rect x="60" y="780" width="26" height="7" rx="3.5" fill="#378ADD" transform="rotate(25 73 784)"/>
 <rect x="500" y="340" width="26" height="7" rx="3.5" fill="#D4537E" transform="rotate(-60 513 344)"/>
 <rect x="240" y="540" width="26" height="7" rx="3.5" fill="#EF9F27" transform="rotate(40 253 544)"/>
+<rect x="160" y="40" width="26" height="7" rx="3.5" fill="#7F77DD" transform="rotate(20 173 44)"/>
+<rect x="360" y="240" width="26" height="7" rx="3.5" fill="#D4537E" transform="rotate(-45 373 244)"/>
+<rect x="540" y="100" width="26" height="7" rx="3.5" fill="#EF9F27" transform="rotate(35 553 104)"/>
+<rect x="100" y="320" width="26" height="7" rx="3.5" fill="#378ADD" transform="rotate(-15 113 324)"/>
+<rect x="300" y="460" width="26" height="7" rx="3.5" fill="#D4537E" transform="rotate(65 313 464)"/>
+<rect x="460" y="420" width="26" height="7" rx="3.5" fill="#7F77DD" transform="rotate(-25 473 424)"/>
+<rect x="40" y="200" width="26" height="7" rx="3.5" fill="#EF9F27" transform="rotate(50 53 204)"/>
+<rect x="260" y="120" width="26" height="7" rx="3.5" fill="#378ADD" transform="rotate(-35 273 124)"/>
+<rect x="440" y="280" width="26" height="7" rx="3.5" fill="#D4537E" transform="rotate(15 453 284)"/>
+<rect x="20" y="460" width="26" height="7" rx="3.5" fill="#7F77DD" transform="rotate(-55 33 464)"/>
+<rect x="180" y="620" width="26" height="7" rx="3.5" fill="#EF9F27" transform="rotate(75 193 624)"/>
+<rect x="360" y="720" width="26" height="7" rx="3.5" fill="#378ADD" transform="rotate(-10 373 724)"/>
+<rect x="500" y="780" width="26" height="7" rx="3.5" fill="#D4537E" transform="rotate(40 513 784)"/>
+<rect x="80" y="860" width="26" height="7" rx="3.5" fill="#7F77DD" transform="rotate(-30 93 864)"/>
+<rect x="220" y="40" width="26" height="7" rx="3.5" fill="#EF9F27" transform="rotate(55 233 44)"/>
+<rect x="640" y="240" width="26" height="7" rx="3.5" fill="#7F77DD" transform="rotate(-20 653 244)"/>
+<rect x="620" y="440" width="26" height="7" rx="3.5" fill="#EF9F27" transform="rotate(45 633 444)"/>
+<rect x="680" y="120" width="26" height="7" rx="3.5" fill="#378ADD" transform="rotate(-50 693 124)"/>
+<rect x="640" y="680" width="26" height="7" rx="3.5" fill="#D4537E" transform="rotate(30 653 684)"/>
+<rect x="20" y="40" width="26" height="7" rx="3.5" fill="#378ADD" transform="rotate(-65 33 44)"/>
+<rect x="200" y="800" width="26" height="7" rx="3.5" fill="#D4537E" transform="rotate(20 213 804)"/>
+<rect x="400" y="600" width="26" height="7" rx="3.5" fill="#EF9F27" transform="rotate(-40 413 604)"/>
+<rect x="140" y="160" width="26" height="7" rx="3.5" fill="#7F77DD" transform="rotate(80 153 164)"/>
+<rect x="340" y="60" width="26" height="7" rx="3.5" fill="#D4537E" transform="rotate(0 353 64)"/>
+<rect x="520" y="240" width="26" height="7" rx="3.5" fill="#378ADD" transform="rotate(-70 533 244)"/>
+<rect x="580" y="540" width="26" height="7" rx="3.5" fill="#EF9F27" transform="rotate(50 593 544)"/>
+<rect x="280" y="860" width="26" height="7" rx="3.5" fill="#7F77DD" transform="rotate(-15 293 864)"/>
+<rect x="460" y="660" width="26" height="7" rx="3.5" fill="#D4537E" transform="rotate(55 473 664)"/>
 </svg>
 <div class="hero-text">
-<p class="overline">THIS WEEK'S SECRET <span class="arrow">&darr;</span></p>
-<h1 class="headline">THE BEST PART IS NOT KNOWING.</h1>
-<p class="subtitle">Even we like the suspense.</p>
-<p class="hero-explainer">Scratch-made brioche donuts. New flavor every Friday. Sold out by ten.</p>
+<p class="hero-brand-line">Tulsa's best-kept donut secret.</p>
+<p class="overline">THIS WEEK'S EXPERIMENT <span class="arrow">&darr;</span></p>
+<h1 class="headline">NEW FLAVORS.<br/>EVERY FRIDAY.</h1>
+<p class="subtitle">Milton's been experimenting again.</p>
+<p class="hero-explainer">Scratch-made brioche. Revealed Friday morning. Gone by ten.</p>
+<a href="#newsletter" class="hero-cta">GET THE SECRET EARLY &rarr;</a>
 </div>
 <div class="hero-image">
 <img src="donut-hero.jpg" alt="A pink-glazed donut with electric blue icing drizzle and colorful sprinkles" />
 </div>
 </section>
-
-<!-- TAGLINE BAND -->
-<div class="tagline-band" role="presentation">
-<span class="tagline-rule" aria-hidden="true"></span>
-<span class="tagline-text">Tulsa's worst-kept secret.</span>
-<span class="tagline-rule" aria-hidden="true"></span>
-</div>
 
 <!-- ABOUT PREVIEW -->
 <section class="about-preview">
@@ -406,7 +434,7 @@ Milton makes scratch-made brioche donuts because he can't stop coming up with ne
 </section>
 
 <!-- NEWSLETTER SIGNUP -->
-<section class="newsletter">
+<section class="newsletter" id="newsletter">
 <p class="section-overline">THE LIST</p>
 <h2 class="newsletter-headline">BE THE FIRST TO KNOW.</h2>
 <p class="newsletter-subtitle">Get the next secret revealed straight to your inbox &mdash; every Thursday night, before the line forms.</p>
