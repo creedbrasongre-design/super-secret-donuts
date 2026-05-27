@@ -1,5 +1,5 @@
 /* ============================================
-   SUPER SECRET DONUTS â€” STYLESHEET
+   SUPER SECRET DONUTS — STYLESHEET
    ============================================ */
 
 :root {
@@ -1296,7 +1296,231 @@ body {
 }
 
 /* ============================================
-   ACCESSIBILITY â€” KEYBOARD FOCUS INDICATORS
+   ORDER PAGE
+   ============================================ */
+
+.order-hero {
+  text-align: center;
+  padding: 100px 80px 80px 80px;
+  background-color: var(--cream);
+}
+
+.order-hero-headline {
+  font-family: 'Impact', 'Anton', 'Inter', sans-serif;
+  font-size: 64px;
+  line-height: 1;
+  color: var(--charcoal);
+  letter-spacing: -1px;
+  margin: 16px 0 24px 0;
+}
+
+.order-hero-sub {
+  font-size: 20px;
+  line-height: 1.6;
+  color: var(--charcoal);
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.order-how-section {
+  padding: 100px 80px;
+  background-color: #EBF3FB;
+  text-align: center;
+  border-top: 1px solid rgba(44, 44, 42, 0.08);
+}
+
+.order-how-content {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.order-section-headline {
+  font-family: 'Impact', 'Anton', 'Inter', sans-serif;
+  font-size: 48px;
+  line-height: 1;
+  color: var(--charcoal);
+  letter-spacing: -1px;
+  margin: 16px 0 48px 0;
+}
+
+.order-steps-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+  text-align: left;
+}
+
+.order-step {
+  display: flex;
+  flex-direction: column;
+}
+
+.order-ways-section {
+  padding: 100px 80px;
+  background-color: #FBE8EF;
+  text-align: center;
+  border-top: 1px solid rgba(44, 44, 42, 0.08);
+}
+
+.order-ways-content {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.order-ways-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  margin-top: 32px;
+}
+
+.order-way-card {
+  background-color: var(--cream);
+  padding: 40px 28px;
+  border-radius: 4px;
+  text-align: center;
+  box-shadow: 0 2px 12px rgba(44, 44, 42, 0.06);
+}
+
+.order-way-icon {
+  font-size: 36px;
+  color: var(--magenta);
+  margin-bottom: 16px;
+  line-height: 1;
+}
+
+.order-way-headline {
+  font-family: 'Impact', 'Anton', 'Inter', sans-serif;
+  font-size: 20px;
+  letter-spacing: 2px;
+  color: var(--charcoal);
+  margin-bottom: 12px;
+}
+
+.order-way-body {
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--charcoal);
+  margin-bottom: 20px;
+}
+
+.order-way-link {
+  display: inline-block;
+  color: var(--cyan);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 16px;
+  transition: color 0.2s ease;
+}
+
+.order-way-link:hover {
+  color: var(--magenta);
+}
+
+.order-custom-section {
+  padding: 100px 80px;
+  background-color: var(--cream);
+  text-align: center;
+  border-top: 1px solid rgba(44, 44, 42, 0.08);
+}
+
+.order-custom-content {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.order-custom-body {
+  font-size: 18px;
+  line-height: 1.7;
+  color: var(--charcoal);
+  margin-bottom: 20px;
+}
+
+.inline-link {
+  color: var(--cyan);
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.inline-link:hover {
+  color: var(--magenta);
+}
+
+.order-faq-section {
+  padding: 100px 80px;
+  background-color: #FAF3E0;
+  text-align: center;
+  border-top: 1px solid rgba(44, 44, 42, 0.08);
+}
+
+.order-faq-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.faq-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px 48px;
+  text-align: left;
+  margin-top: 32px;
+}
+
+.faq-item {
+  border-top: 2px solid var(--charcoal);
+  padding-top: 16px;
+}
+
+.faq-question {
+  font-family: 'Impact', 'Anton', 'Inter', sans-serif;
+  font-size: 17px;
+  letter-spacing: 1px;
+  color: var(--magenta);
+  margin-bottom: 10px;
+}
+
+.faq-answer {
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--charcoal);
+}
+
+/* Order page mobile */
+@media (max-width: 768px) {
+  .order-hero {
+    padding: 60px 20px;
+  }
+
+  .order-hero-headline {
+    font-size: 40px;
+  }
+
+  .order-how-section,
+  .order-ways-section,
+  .order-custom-section,
+  .order-faq-section {
+    padding: 60px 20px;
+  }
+
+  .order-section-headline {
+    font-size: 32px;
+  }
+
+  .order-steps-grid,
+  .order-ways-grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .faq-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+}
+
+/* ============================================
+   ACCESSIBILITY — KEYBOARD FOCUS INDICATORS
    ============================================
    Uses :focus-visible so styles only appear for
    keyboard navigation (Tab key), not mouse clicks.
@@ -1329,7 +1553,7 @@ textarea:focus-visible,
   outline-offset: 4px;
 }
 
-/* Archive cards (image links) â€” show focus on the
+/* Archive cards (image links) — show focus on the
    whole card so keyboard users see where they are */
 .archive-card:focus-visible {
   outline: 3px solid var(--magenta);
@@ -1337,7 +1561,7 @@ textarea:focus-visible,
   border-radius: 4px;
 }
 
-/* Skip-to-content link â€” hidden until focused, then
+/* Skip-to-content link — hidden until focused, then
    appears at top-left. Lets keyboard/screen-reader
    users skip past the nav on every page. */
 .skip-link {
