@@ -13,6 +13,19 @@
   letter-spacing: 4px;
   margin-bottom: 18px;
 }
+/* Mystery tile for "This Week's Secret" in Classics grid */
+.secret-tile {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  border-radius: inherit;
+  overflow: hidden;
+  display: block;
+}
+.secret-tile svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
 </style>
 </head>
 <body>
@@ -131,6 +144,23 @@
 <div class="archive-card">
 <img src="classic-zi.jpg" alt="Z.I. donut with browned-butter icing, browned-butter caramel drizzle, and smoked salt" />
 <p class="archive-name">Z.I.</p>
+</div>
+<div class="archive-card">
+<div class="secret-tile" role="img" aria-label="This week's secret donut — flavor not revealed">
+<svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+<rect width="400" height="400" fill="#D4537E"/>
+<rect x="40" y="60" width="28" height="8" rx="4" fill="#FFFDF7" transform="rotate(35 54 64)"/>
+<rect x="320" y="90" width="28" height="8" rx="4" fill="#EF9F27" transform="rotate(-25 334 94)"/>
+<rect x="60" y="320" width="28" height="8" rx="4" fill="#378ADD" transform="rotate(55 74 324)"/>
+<rect x="330" y="310" width="28" height="8" rx="4" fill="#7F77DD" transform="rotate(-15 344 314)"/>
+<rect x="350" y="200" width="28" height="8" rx="4" fill="#FFFDF7" transform="rotate(70 364 204)"/>
+<rect x="30" y="200" width="28" height="8" rx="4" fill="#EF9F27" transform="rotate(-60 44 204)"/>
+<rect x="180" y="40" width="28" height="8" rx="4" fill="#378ADD" transform="rotate(20 194 44)"/>
+<rect x="200" y="350" width="28" height="8" rx="4" fill="#7F77DD" transform="rotate(-40 214 354)"/>
+<text x="200" y="240" text-anchor="middle" font-family="Impact, sans-serif" font-size="160" fill="#FFFDF7" letter-spacing="6">???</text>
+</svg>
+</div>
+<p class="archive-name">THIS WEEK'S SECRET</p>
 </div>
 </div>
 </section>
