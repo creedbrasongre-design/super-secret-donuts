@@ -1,233 +1,232 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Order Online — Super Secret Donuts</title>
-  <link rel="stylesheet" href="styles.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Order Online — Super Secret Donuts</title>
+<link rel="stylesheet" href="styles.css" />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
 </head>
 <body>
+<!-- NAVIGATION BAR -->
+<nav class="nav">
+<div class="nav-left">
+<svg class="logo" viewBox="-2 -4 104 58" xmlns="http://www.w3.org/2000/svg" aria-label="Super Secret Donuts logo">
+<path d="M 12 25 Q 50 -2 88 25 Q 50 52 12 25 Z" fill="none" stroke="#D4537E" stroke-width="3" stroke-linejoin="round"/>
+<circle cx="50" cy="25" r="13.5" fill="none" stroke="#D4537E" stroke-width="3"/>
+<circle cx="50" cy="25" r="4.8" fill="#D4537E"/>
+</svg>
+<span class="wordmark">SUPER SECRET DONUTS</span>
+</div>
+<ul class="nav-links">
+<li><a href="index.html">Home</a></li>
+<li><a href="menu.html">Menu</a></li>
+<li><a href="story.html">Story</a></li>
+<li><a href="findus.html">Find Us</a></li>
+</ul>
+<a href="order.html" class="order-button">Order Online</a>
+</nav>
 
-  <!-- NAVIGATION BAR -->
-  <nav class="nav">
-    <div class="nav-left">
-      <svg class="logo" viewBox="-2 -4 104 58" xmlns="http://www.w3.org/2000/svg" aria-label="Super Secret Donuts logo">
-        <path d="M 12 25 Q 50 -2 88 25 Q 50 52 12 25 Z" fill="none" stroke="#D4537E" stroke-width="3" stroke-linejoin="round"/>
-        <circle cx="50" cy="25" r="13.5" fill="none" stroke="#D4537E" stroke-width="3"/>
-        <circle cx="50" cy="25" r="4.8" fill="#D4537E"/>
-      </svg>
-      <span class="wordmark">SUPER SECRET DONUTS</span>
-    </div>
-    <ul class="nav-links">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="menu.html">Menu</a></li>
-      <li><a href="story.html">Story</a></li>
-      <li><a href="findus.html">Find Us</a></li>
-    </ul>
-    <a href="order.html" class="order-button">Order Online</a>
-  </nav>
+<!-- DONUT BORDER STRIP -->
+<div class="donut-border" aria-hidden="true">
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+<defs>
+<g id="donut-mag"><circle cx="20" cy="20" r="16" fill="#D4537E"/><circle cx="20" cy="20" r="5" fill="#FFFDF7"/><rect x="10" y="11" width="3" height="1.2" rx="0.6" fill="#FFFDF7" transform="rotate(25 11.5 11.6)"/><rect x="26" y="14" width="3" height="1.2" rx="0.6" fill="#EF9F27" transform="rotate(-30 27.5 14.6)"/><rect x="14" y="28" width="3" height="1.2" rx="0.6" fill="#378ADD" transform="rotate(55 15.5 28.6)"/><rect x="25" y="26" width="3" height="1.2" rx="0.6" fill="#7F77DD" transform="rotate(-15 26.5 26.6)"/><rect x="9" y="22" width="3" height="1.2" rx="0.6" fill="#EF9F27" transform="rotate(70 10.5 22.6)"/></g>
+<g id="donut-cyan"><circle cx="20" cy="20" r="16" fill="#378ADD"/><circle cx="20" cy="20" r="5" fill="#FFFDF7"/><rect x="12" y="10" width="3" height="1.2" rx="0.6" fill="#FFFDF7" transform="rotate(-20 13.5 10.6)"/><rect x="27" y="16" width="3" height="1.2" rx="0.6" fill="#D4537E" transform="rotate(40 28.5 16.6)"/><rect x="11" y="25" width="3" height="1.2" rx="0.6" fill="#EF9F27" transform="rotate(-50 12.5 25.6)"/><rect x="24" y="28" width="3" height="1.2" rx="0.6" fill="#FFFDF7" transform="rotate(20 25.5 28.6)"/><rect x="28" y="22" width="3" height="1.2" rx="0.6" fill="#7F77DD" transform="rotate(-60 29.5 22.6)"/></g>
+<g id="donut-yel"><circle cx="20" cy="20" r="16" fill="#EF9F27"/><circle cx="20" cy="20" r="5" fill="#FFFDF7"/><rect x="11" y="13" width="3" height="1.2" rx="0.6" fill="#D4537E" transform="rotate(35 12.5 13.6)"/><rect x="25" y="11" width="3" height="1.2" rx="0.6" fill="#378ADD" transform="rotate(-25 26.5 11.6)"/><rect x="13" y="27" width="3" height="1.2" rx="0.6" fill="#7F77DD" transform="rotate(60 14.5 27.6)"/><rect x="26" y="25" width="3" height="1.2" rx="0.6" fill="#FFFDF7" transform="rotate(-10 27.5 25.6)"/><rect x="9" y="20" width="3" height="1.2" rx="0.6" fill="#D4537E" transform="rotate(75 10.5 20.6)"/></g>
+<g id="donut-pur"><circle cx="20" cy="20" r="16" fill="#7F77DD"/><circle cx="20" cy="20" r="5" fill="#FFFDF7"/><rect x="13" y="10" width="3" height="1.2" rx="0.6" fill="#EF9F27" transform="rotate(-30 14.5 10.6)"/><rect x="27" y="14" width="3" height="1.2" rx="0.6" fill="#FFFDF7" transform="rotate(25 28.5 14.6)"/><rect x="10" y="24" width="3" height="1.2" rx="0.6" fill="#D4537E" transform="rotate(-55 11.5 24.6)"/><rect x="25" y="27" width="3" height="1.2" rx="0.6" fill="#378ADD" transform="rotate(15 26.5 27.6)"/><rect x="28" y="21" width="3" height="1.2" rx="0.6" fill="#EF9F27" transform="rotate(-65 29.5 21.6)"/></g>
+</defs>
+</svg>
+<svg class="donut-icon" viewBox="0 0 40 40"><use href="#donut-mag"/></svg>
+<svg class="donut-icon" viewBox="0 0 40 40"><use href="#donut-cyan"/></svg>
+<svg class="donut-icon" viewBox="0 0 40 40"><use href="#donut-yel"/></svg>
+<svg class="donut-icon" viewBox="0 0 40 40"><use href="#donut-pur"/></svg>
+<svg class="donut-icon" viewBox="0 0 40 40"><use href="#donut-mag"/></svg>
+<svg class="donut-icon" viewBox="0 0 40 40"><use href="#donut-cyan"/></svg>
+<svg class="donut-icon" viewBox="0 0 40 40"><use href="#donut-yel"/></svg>
+<svg class="donut-icon" viewBox="0 0 40 40"><use href="#donut-pur"/></svg>
+<svg class="donut-icon" viewBox="0 0 40 40"><use href="#donut-mag"/></svg>
+<svg class="donut-icon" viewBox="0 0 40 40"><use href="#donut-cyan"/></svg>
+<svg class="donut-icon" viewBox="0 0 40 40"><use href="#donut-yel"/></svg>
+<svg class="donut-icon" viewBox="0 0 40 40"><use href="#donut-pur"/></svg>
+<svg class="donut-icon" viewBox="0 0 40 40"><use href="#donut-mag"/></svg>
+<svg class="donut-icon" viewBox="0 0 40 40"><use href="#donut-cyan"/></svg>
+<svg class="donut-icon" viewBox="0 0 40 40"><use href="#donut-yel"/></svg>
+<svg class="donut-icon" viewBox="0 0 40 40"><use href="#donut-pur"/></svg>
+<svg class="donut-icon" viewBox="0 0 40 40"><use href="#donut-mag"/></svg>
+<svg class="donut-icon" viewBox="0 0 40 40"><use href="#donut-cyan"/></svg>
+<svg class="donut-icon" viewBox="0 0 40 40"><use href="#donut-yel"/></svg>
+<svg class="donut-icon" viewBox="0 0 40 40"><use href="#donut-pur"/></svg>
+<svg class="donut-icon" viewBox="0 0 40 40"><use href="#donut-mag"/></svg>
+<svg class="donut-icon" viewBox="0 0 40 40"><use href="#donut-cyan"/></svg>
+<svg class="donut-icon" viewBox="0 0 40 40"><use href="#donut-yel"/></svg>
+<svg class="donut-icon" viewBox="0 0 40 40"><use href="#donut-pur"/></svg>
+<svg class="donut-icon" viewBox="0 0 40 40"><use href="#donut-mag"/></svg>
+<svg class="donut-icon" viewBox="0 0 40 40"><use href="#donut-cyan"/></svg>
+<svg class="donut-icon" viewBox="0 0 40 40"><use href="#donut-yel"/></svg>
+<svg class="donut-icon" viewBox="0 0 40 40"><use href="#donut-pur"/></svg>
+<svg class="donut-icon" viewBox="0 0 40 40"><use href="#donut-mag"/></svg>
+<svg class="donut-icon" viewBox="0 0 40 40"><use href="#donut-cyan"/></svg>
+<svg class="donut-icon" viewBox="0 0 40 40"><use href="#donut-yel"/></svg>
+<svg class="donut-icon" viewBox="0 0 40 40"><use href="#donut-pur"/></svg>
+</div>
 
-  <!-- DONUT BORDER STRIP -->
-  <div class="donut-border" aria-hidden="true">
-    <svg width="0" height="0" style="position:absolute" aria-hidden="true">
-      <defs>
-        <g id="donut-mag"><circle cx="20" cy="20" r="16" fill="#D4537E"/><circle cx="20" cy="20" r="5" fill="#FFFDF7"/><rect x="10" y="11" width="3" height="1.2" rx="0.6" fill="#FFFDF7" transform="rotate(25 11.5 11.6)"/><rect x="26" y="14" width="3" height="1.2" rx="0.6" fill="#EF9F27" transform="rotate(-30 27.5 14.6)"/><rect x="14" y="28" width="3" height="1.2" rx="0.6" fill="#378ADD" transform="rotate(55 15.5 28.6)"/><rect x="25" y="26" width="3" height="1.2" rx="0.6" fill="#7F77DD" transform="rotate(-15 26.5 26.6)"/><rect x="9" y="22" width="3" height="1.2" rx="0.6" fill="#EF9F27" transform="rotate(70 10.5 22.6)"/></g>
-        <g id="donut-cyan"><circle cx="20" cy="20" r="16" fill="#378ADD"/><circle cx="20" cy="20" r="5" fill="#FFFDF7"/><rect x="12" y="10" width="3" height="1.2" rx="0.6" fill="#FFFDF7" transform="rotate(-20 13.5 10.6)"/><rect x="27" y="16" width="3" height="1.2" rx="0.6" fill="#D4537E" transform="rotate(40 28.5 16.6)"/><rect x="11" y="25" width="3" height="1.2" rx="0.6" fill="#EF9F27" transform="rotate(-50 12.5 25.6)"/><rect x="24" y="28" width="3" height="1.2" rx="0.6" fill="#FFFDF7" transform="rotate(20 25.5 28.6)"/><rect x="28" y="22" width="3" height="1.2" rx="0.6" fill="#7F77DD" transform="rotate(-60 29.5 22.6)"/></g>
-        <g id="donut-yel"><circle cx="20" cy="20" r="16" fill="#EF9F27"/><circle cx="20" cy="20" r="5" fill="#FFFDF7"/><rect x="11" y="13" width="3" height="1.2" rx="0.6" fill="#D4537E" transform="rotate(35 12.5 13.6)"/><rect x="25" y="11" width="3" height="1.2" rx="0.6" fill="#378ADD" transform="rotate(-25 26.5 11.6)"/><rect x="13" y="27" width="3" height="1.2" rx="0.6" fill="#7F77DD" transform="rotate(60 14.5 27.6)"/><rect x="26" y="25" width="3" height="1.2" rx="0.6" fill="#FFFDF7" transform="rotate(-10 27.5 25.6)"/><rect x="9" y="20" width="3" height="1.2" rx="0.6" fill="#D4537E" transform="rotate(75 10.5 20.6)"/></g>
-        <g id="donut-pur"><circle cx="20" cy="20" r="16" fill="#7F77DD"/><circle cx="20" cy="20" r="5" fill="#FFFDF7"/><rect x="13" y="10" width="3" height="1.2" rx="0.6" fill="#EF9F27" transform="rotate(-30 14.5 10.6)"/><rect x="27" y="14" width="3" height="1.2" rx="0.6" fill="#FFFDF7" transform="rotate(25 28.5 14.6)"/><rect x="10" y="24" width="3" height="1.2" rx="0.6" fill="#D4537E" transform="rotate(-55 11.5 24.6)"/><rect x="25" y="27" width="3" height="1.2" rx="0.6" fill="#378ADD" transform="rotate(15 26.5 27.6)"/><rect x="28" y="21" width="3" height="1.2" rx="0.6" fill="#EF9F27" transform="rotate(-65 29.5 21.6)"/></g>
-      </defs>
-    </svg>
-    <svg class="donut-icon" viewBox="0 0 40 40"><use href="#donut-mag"/></svg>
-    <svg class="donut-icon" viewBox="0 0 40 40"><use href="#donut-cyan"/></svg>
-    <svg class="donut-icon" viewBox="0 0 40 40"><use href="#donut-yel"/></svg>
-    <svg class="donut-icon" viewBox="0 0 40 40"><use href="#donut-pur"/></svg>
-    <svg class="donut-icon" viewBox="0 0 40 40"><use href="#donut-mag"/></svg>
-    <svg class="donut-icon" viewBox="0 0 40 40"><use href="#donut-cyan"/></svg>
-    <svg class="donut-icon" viewBox="0 0 40 40"><use href="#donut-yel"/></svg>
-    <svg class="donut-icon" viewBox="0 0 40 40"><use href="#donut-pur"/></svg>
-    <svg class="donut-icon" viewBox="0 0 40 40"><use href="#donut-mag"/></svg>
-    <svg class="donut-icon" viewBox="0 0 40 40"><use href="#donut-cyan"/></svg>
-    <svg class="donut-icon" viewBox="0 0 40 40"><use href="#donut-yel"/></svg>
-    <svg class="donut-icon" viewBox="0 0 40 40"><use href="#donut-pur"/></svg>
-    <svg class="donut-icon" viewBox="0 0 40 40"><use href="#donut-mag"/></svg>
-    <svg class="donut-icon" viewBox="0 0 40 40"><use href="#donut-cyan"/></svg>
-    <svg class="donut-icon" viewBox="0 0 40 40"><use href="#donut-yel"/></svg>
-    <svg class="donut-icon" viewBox="0 0 40 40"><use href="#donut-pur"/></svg>
-    <svg class="donut-icon" viewBox="0 0 40 40"><use href="#donut-mag"/></svg>
-    <svg class="donut-icon" viewBox="0 0 40 40"><use href="#donut-cyan"/></svg>
-    <svg class="donut-icon" viewBox="0 0 40 40"><use href="#donut-yel"/></svg>
-    <svg class="donut-icon" viewBox="0 0 40 40"><use href="#donut-pur"/></svg>
-    <svg class="donut-icon" viewBox="0 0 40 40"><use href="#donut-mag"/></svg>
-    <svg class="donut-icon" viewBox="0 0 40 40"><use href="#donut-cyan"/></svg>
-    <svg class="donut-icon" viewBox="0 0 40 40"><use href="#donut-yel"/></svg>
-    <svg class="donut-icon" viewBox="0 0 40 40"><use href="#donut-pur"/></svg>
-    <svg class="donut-icon" viewBox="0 0 40 40"><use href="#donut-mag"/></svg>
-    <svg class="donut-icon" viewBox="0 0 40 40"><use href="#donut-cyan"/></svg>
-    <svg class="donut-icon" viewBox="0 0 40 40"><use href="#donut-yel"/></svg>
-    <svg class="donut-icon" viewBox="0 0 40 40"><use href="#donut-pur"/></svg>
-    <svg class="donut-icon" viewBox="0 0 40 40"><use href="#donut-mag"/></svg>
-    <svg class="donut-icon" viewBox="0 0 40 40"><use href="#donut-cyan"/></svg>
-    <svg class="donut-icon" viewBox="0 0 40 40"><use href="#donut-yel"/></svg>
-    <svg class="donut-icon" viewBox="0 0 40 40"><use href="#donut-pur"/></svg>
-  </div>
+<!-- PAGE HERO -->
+<section class="order-hero">
+<p class="section-overline">ORDER ONLINE</p>
+<h1 class="order-hero-headline">LOCK IN YOUR SECRET.</h1>
+<p class="order-hero-sub">Pre-orders open every Thursday at 8 PM and close when we sell out. Here's how to get yours.</p>
+</section>
 
-  <!-- PAGE HERO -->
-  <section class="order-hero">
-    <p class="section-overline">ORDER ONLINE</p>
-    <h1 class="order-hero-headline">LOCK IN YOUR SECRET.</h1>
-    <p class="order-hero-sub">Pre-orders open every Thursday at 8 PM and close when we sell out. Here's how to get yours.</p>
-  </section>
+<!-- HOW PRE-ORDERS WORK -->
+<section class="order-how-section">
+<div class="order-how-content">
+<p class="section-overline">HOW IT WORKS</p>
+<h2 class="order-section-headline">FOUR STEPS. EASY.</h2>
+<div class="order-steps-grid">
+<div class="order-step">
+<p class="how-number">01</p>
+<p class="how-headline">CHECK THURSDAY NIGHT.</p>
+<p class="how-body">We post the weekly secret on Instagram around 7 PM. Pre-orders open at 8.</p>
+</div>
+<div class="order-step">
+<p class="how-number">02</p>
+<p class="how-headline">DM OR EMAIL.</p>
+<p class="how-body">Send your order: how many donuts, pickup day, and your name. We'll confirm.</p>
+</div>
+<div class="order-step">
+<p class="how-number">03</p>
+<p class="how-headline">PAY WHEN YOU PICK UP.</p>
+<p class="how-body">Cash, card, Apple Pay, or Venmo. Pay at the airstream when you grab your box.</p>
+</div>
+<div class="order-step">
+<p class="how-number">04</p>
+<p class="how-headline">SKIP THE LINE.</p>
+<p class="how-body">Tell us at the window, we'll have your box ready. In and out in under a minute.</p>
+</div>
+</div>
+</div>
+</section>
 
-  <!-- HOW PRE-ORDERS WORK -->
-  <section class="order-how-section">
-    <div class="order-how-content">
-      <p class="section-overline">HOW IT WORKS</p>
-      <h2 class="order-section-headline">FOUR STEPS. EASY.</h2>
-      <div class="order-steps-grid">
-        <div class="order-step">
-          <p class="how-number">01</p>
-          <p class="how-headline">CHECK THURSDAY NIGHT.</p>
-          <p class="how-body">We post the weekly secret on Instagram around 7 PM. Pre-orders open at 8.</p>
-        </div>
-        <div class="order-step">
-          <p class="how-number">02</p>
-          <p class="how-headline">DM OR EMAIL.</p>
-          <p class="how-body">Send your order: how many donuts, pickup day, and your name. We'll confirm.</p>
-        </div>
-        <div class="order-step">
-          <p class="how-number">03</p>
-          <p class="how-headline">PAY WHEN YOU PICK UP.</p>
-          <p class="how-body">Cash, card, Apple Pay, or Venmo. Pay at the airstream when you grab your box.</p>
-        </div>
-        <div class="order-step">
-          <p class="how-number">04</p>
-          <p class="how-headline">SKIP THE LINE.</p>
-          <p class="how-body">Tell us at the window, we'll have your box ready. In and out in under a minute.</p>
-        </div>
-      </div>
-    </div>
-  </section>
+<!-- THREE WAYS TO ORDER -->
+<section class="order-ways-section">
+<div class="order-ways-content">
+<p class="section-overline">THREE WAYS</p>
+<h2 class="order-section-headline">HOW TO REACH US.</h2>
+<div class="order-ways-grid">
+<div class="order-way-card">
+<p class="order-way-icon">&#9737;</p>
+<p class="order-way-headline">INSTAGRAM DM</p>
+<p class="order-way-body">Fastest way. We answer DMs within the hour during pre-order windows.</p>
+<a href="https://www.instagram.com/ssdtulsa/" target="_blank" rel="noopener" class="order-way-link">@ssdtulsa &rarr;</a>
+</div>
+<div class="order-way-card">
+<p class="order-way-icon">&#9993;</p>
+<p class="order-way-headline">EMAIL</p>
+<p class="order-way-body">For bigger orders, catering, or anything that needs more than a quick reply.</p>
+<a href="mailto:supersecretdonuts@gmail.com" class="order-way-link">supersecretdonuts@gmail.com &rarr;</a>
+</div>
+<div class="order-way-card">
+<p class="order-way-icon">&#9742;</p>
+<p class="order-way-headline">PHONE</p>
+<p class="order-way-body">Old school works too. Call or text us &mdash; we answer when we're not glazing.</p>
+<a href="tel:+18088612177" class="order-way-link">(808) 861-2177 &rarr;</a>
+</div>
+</div>
+</div>
+</section>
 
-  <!-- THREE WAYS TO ORDER -->
-  <section class="order-ways-section">
-    <div class="order-ways-content">
-      <p class="section-overline">THREE WAYS</p>
-      <h2 class="order-section-headline">HOW TO REACH US.</h2>
-      <div class="order-ways-grid">
-        <div class="order-way-card">
-          <p class="order-way-icon">&#9737;</p>
-          <p class="order-way-headline">INSTAGRAM DM</p>
-          <p class="order-way-body">Fastest way. We answer DMs within the hour during pre-order windows.</p>
-          <a href="https://www.instagram.com/ssdtulsa/" target="_blank" rel="noopener" class="order-way-link">@ssdtulsa &rarr;</a>
-        </div>
-        <div class="order-way-card">
-          <p class="order-way-icon">&#9993;</p>
-          <p class="order-way-headline">EMAIL</p>
-          <p class="order-way-body">For bigger orders, catering, or anything that needs more than a quick reply.</p>
-          <a href="mailto:supersecretdonuts@gmail.com" class="order-way-link">supersecretdonuts@gmail.com &rarr;</a>
-        </div>
-        <div class="order-way-card">
-          <p class="order-way-icon">&#9742;</p>
-          <p class="order-way-headline">PHONE</p>
-          <p class="order-way-body">Old school works too. Call or text us &mdash; we answer when we're not glazing.</p>
-          <a href="tel:+18088612177" class="order-way-link">(808) 861-2177 &rarr;</a>
-        </div>
-      </div>
-    </div>
-  </section>
+<!-- CUSTOM ORDERS / CATERING -->
+<section class="order-custom-section">
+<div class="order-custom-content">
+<p class="section-overline">BIG ORDERS</p>
+<h2 class="order-section-headline">CATERING &amp; CUSTOM.</h2>
+<p class="order-custom-body">Office breakfast, wedding, birthday, anniversary &mdash; if you&rsquo;re feeding a crowd, Milton will build a custom flavor lineup with you. The wilder the idea, the better. One-week lead time on orders over two dozen.</p>
+<p class="order-custom-body">Email <a href="mailto:supersecretdonuts@gmail.com" class="inline-link">supersecretdonuts@gmail.com</a> with your event date, headcount, and any flavor requests. We'll send a quote within 24 hours.</p>
+</div>
+</section>
 
-  <!-- CUSTOM ORDERS / CATERING -->
-  <section class="order-custom-section">
-    <div class="order-custom-content">
-      <p class="section-overline">BIG ORDERS</p>
-      <h2 class="order-section-headline">CATERING &amp; CUSTOM.</h2>
-      <p class="order-custom-body">Throwing a party? Office breakfast? Wedding? Birthday? We do bulk orders for events of any size, and Milton will work with you on a custom flavor lineup if you want something specific. Lead time: one week minimum for orders over two dozen.</p>
-      <p class="order-custom-body">Email <a href="mailto:supersecretdonuts@gmail.com" class="inline-link">supersecretdonuts@gmail.com</a> with your event date, headcount, and any flavor requests. We'll send a quote within 24 hours.</p>
-    </div>
-  </section>
+<!-- FAQ -->
+<section class="order-faq-section">
+<div class="order-faq-content">
+<p class="section-overline">QUESTIONS</p>
+<h2 class="order-section-headline">THE FINE PRINT.</h2>
+<div class="faq-grid">
+<div class="faq-item">
+<p class="faq-question">When do pre-orders close?</p>
+<p class="faq-answer">When we sell out. Usually Friday morning. The earlier you order, the safer you are.</p>
+</div>
+<div class="faq-item">
+<p class="faq-question">Can I cancel?</p>
+<p class="faq-answer">Yes, up to 24 hours before pickup. After that we've already made your donuts &mdash; you're on the hook.</p>
+</div>
+<div class="faq-item">
+<p class="faq-question">What if I have allergies?</p>
+<p class="faq-answer">Tell us when you order. All donuts contain wheat, eggs, dairy, butter, and may contain nuts.</p>
+</div>
+<div class="faq-item">
+<p class="faq-question">Do you deliver?</p>
+<p class="faq-answer">Not yet. Pickup only, at the airstream behind Mother Road Market.</p>
+</div>
+<div class="faq-item">
+<p class="faq-question">Can I get a flavor that's not this week's secret?</p>
+<p class="faq-answer">For events over two dozen, yes &mdash; ask about custom flavors. For regular pre-orders, you get the secret.</p>
+</div>
+<div class="faq-item">
+<p class="faq-question">What if I miss my pickup?</p>
+<p class="faq-answer">We hold orders until close on Sunday. After that, they go to the staff &mdash; we don't waste good donuts.</p>
+</div>
+</div>
+</div>
+</section>
 
-  <!-- FAQ -->
-  <section class="order-faq-section">
-    <div class="order-faq-content">
-      <p class="section-overline">QUESTIONS</p>
-      <h2 class="order-section-headline">THE FINE PRINT.</h2>
-      <div class="faq-grid">
-        <div class="faq-item">
-          <p class="faq-question">When do pre-orders close?</p>
-          <p class="faq-answer">When we sell out. Usually Friday morning. The earlier you order, the safer you are.</p>
-        </div>
-        <div class="faq-item">
-          <p class="faq-question">Can I cancel?</p>
-          <p class="faq-answer">Yes, up to 24 hours before pickup. After that we've already made your donuts &mdash; you're on the hook.</p>
-        </div>
-        <div class="faq-item">
-          <p class="faq-question">What if I have allergies?</p>
-          <p class="faq-answer">Tell us when you order. All donuts contain wheat, eggs, dairy, butter, and may contain nuts.</p>
-        </div>
-        <div class="faq-item">
-          <p class="faq-question">Do you deliver?</p>
-          <p class="faq-answer">Not yet. Pickup only, at the airstream behind Mother Road Market.</p>
-        </div>
-        <div class="faq-item">
-          <p class="faq-question">Can I get a flavor that's not this week's secret?</p>
-          <p class="faq-answer">For events over two dozen, yes &mdash; ask about custom flavors. For regular pre-orders, you get the secret.</p>
-        </div>
-        <div class="faq-item">
-          <p class="faq-question">What if I miss my pickup?</p>
-          <p class="faq-answer">We hold orders until close on Sunday. After that, they go to the staff &mdash; we don't waste good donuts.</p>
-        </div>
-      </div>
-    </div>
-  </section>
+<!-- CTA -->
+<section class="story-cta">
+<h2 class="story-cta-headline">READY?</h2>
+<p class="story-cta-sub">DM, email, call &mdash; whatever works. We&rsquo;ll have your box on the counter Friday.</p>
+<a href="https://www.instagram.com/ssdtulsa/" target="_blank" rel="noopener" class="story-cta-button">DM @SSDTULSA &rarr;</a>
+</section>
 
-  <!-- CTA -->
-  <section class="story-cta">
-    <h2 class="story-cta-headline">READY?</h2>
-    <p class="story-cta-sub">DM us, email us, or call &mdash; we'll lock in your box.</p>
-    <a href="https://www.instagram.com/ssdtulsa/" target="_blank" rel="noopener" class="story-cta-button">DM @SSDTULSA &rarr;</a>
-  </section>
-
-  <!-- FOOTER -->
-  <footer class="footer">
-    <div class="footer-grid">
-      <div class="footer-brand">
-        <svg class="footer-logo" viewBox="-2 -4 104 58" xmlns="http://www.w3.org/2000/svg" aria-label="Super Secret Donuts logo">
-          <path d="M 12 25 Q 50 -2 88 25 Q 50 52 12 25 Z" fill="none" stroke="#D4537E" stroke-width="3" stroke-linejoin="round"/>
-          <circle cx="50" cy="25" r="13.5" fill="none" stroke="#D4537E" stroke-width="3"/>
-          <circle cx="50" cy="25" r="4.8" fill="#D4537E"/>
-        </svg>
-        <p class="footer-wordmark">SUPER SECRET DONUTS</p>
-        <p class="footer-tagline">Tulsa&rsquo;s worst-kept secret.</p>
-      </div>
-      <div class="footer-column">
-        <p class="footer-heading">EXPLORE</p>
-        <ul class="footer-links">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="menu.html">Menu</a></li>
-          <li><a href="story.html">Story</a></li>
-          <li><a href="findus.html">Find Us</a></li>
-          <li><a href="order.html">Order Online</a></li>
-        </ul>
-      </div>
-      <div class="footer-column">
-        <p class="footer-heading">VISIT</p>
-        <p class="footer-info">Mother Road Market<br/>1124 S Lewis Ave<br/>Tulsa, OK 74104</p>
-        <p class="footer-info">Friday &ndash; Sunday<br/>7:00 AM &ndash; Sold out</p>
-      </div>
-      <div class="footer-column">
-        <p class="footer-heading">FOLLOW</p>
-        <ul class="footer-links">
-          <li><a href="https://www.instagram.com/ssdtulsa/" target="_blank" rel="noopener">Instagram</a></li>
-          <li><a href="https://www.facebook.com/p/Super-Secret-Donuts-Tulsa-61566325681007/" target="_blank" rel="noopener">Facebook</a></li>
-          <li><a href="https://www.tiktok.com/@supersecretdonuts" target="_blank" rel="noopener">TikTok</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <p>&copy; 2026 Super Secret Donuts. All secrets reserved.</p>
-    </div>
-  </footer>
+<!-- FOOTER -->
+<footer class="footer">
+<div class="footer-grid">
+<div class="footer-brand">
+<svg class="footer-logo" viewBox="-2 -4 104 58" xmlns="http://www.w3.org/2000/svg" aria-label="Super Secret Donuts logo">
+<path d="M 12 25 Q 50 -2 88 25 Q 50 52 12 25 Z" fill="none" stroke="#D4537E" stroke-width="3" stroke-linejoin="round"/>
+<circle cx="50" cy="25" r="13.5" fill="none" stroke="#D4537E" stroke-width="3"/>
+<circle cx="50" cy="25" r="4.8" fill="#D4537E"/>
+</svg>
+<p class="footer-wordmark">SUPER SECRET DONUTS</p>
+<p class="footer-tagline">Tulsa&rsquo;s worst-kept secret.</p>
+</div>
+<div class="footer-column">
+<p class="footer-heading">EXPLORE</p>
+<ul class="footer-links">
+<li><a href="index.html">Home</a></li>
+<li><a href="menu.html">Menu</a></li>
+<li><a href="story.html">Story</a></li>
+<li><a href="findus.html">Find Us</a></li>
+<li><a href="order.html">Order Online</a></li>
+</ul>
+</div>
+<div class="footer-column">
+<p class="footer-heading">VISIT</p>
+<p class="footer-info">Mother Road Market<br/>1124 S Lewis Ave<br/>Tulsa, OK 74104</p>
+<p class="footer-info">Friday &ndash; Sunday<br/>7:00 AM &ndash; Sold out</p>
+</div>
+<div class="footer-column">
+<p class="footer-heading">FOLLOW</p>
+<ul class="footer-links">
+<li><a href="https://www.instagram.com/ssdtulsa/" target="_blank" rel="noopener">Instagram</a></li>
+<li><a href="https://www.facebook.com/p/Super-Secret-Donuts-Tulsa-61566325681007/" target="_blank" rel="noopener">Facebook</a></li>
+<li><a href="https://www.tiktok.com/@supersecretdonuts" target="_blank" rel="noopener">TikTok</a></li>
+</ul>
+</div>
+</div>
+<div class="footer-bottom">
+<p>&copy; 2026 Super Secret Donuts. All secrets reserved.</p>
+</div>
+</footer>
 
 </body>
 </html>
