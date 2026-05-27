@@ -77,6 +77,26 @@
   transform: translateX(4px);
 }
 
+/* Hand-drawn underline under About headline */
+.hand-underline {
+  display: block;
+  width: 280px;
+  max-width: 70%;
+  height: auto;
+  margin-top: -16px;
+  margin-bottom: 24px;
+  opacity: 0.9;
+}
+
+/* Hand-drawn arrow inside hero CTA */
+.hand-arrow {
+  display: inline-block;
+  width: 36px;
+  height: 12px;
+  vertical-align: middle;
+  margin-left: 6px;
+}
+
 /* About section — warm cream background, image flipped LEFT */
 .about-preview {
   background-color: #FFF7E8;
@@ -297,7 +317,7 @@
 <p class="hero-brand-line">Tulsa's worst-kept donut secret.</p>
 <h1 class="headline">NEW FLAVORS.<br/>EVERY FRIDAY.</h1>
 <p class="hero-explainer">Scratch-made brioche. Come early — gone by ten.</p>
-<a href="#newsletter" class="hero-cta">GET THE SECRET EARLY &rarr;</a>
+<a href="#newsletter" class="hero-cta">GET THE SECRET EARLY <svg class="hand-arrow" viewBox="0 0 50 16" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M 2 8 Q 12 5, 22 8 T 42 8" stroke="currentColor" stroke-width="2.2" fill="none" stroke-linecap="round"/><path d="M 36 3 Q 41 7, 42 8 Q 41 9, 36 13" stroke="currentColor" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
 </div>
 <div class="hero-image">
 <img src="donut-hero.jpg" alt="A pink-glazed donut with electric blue icing drizzle and colorful sprinkles" />
@@ -309,6 +329,7 @@
 <div class="about-text">
 <p class="section-overline">ABOUT</p>
 <h2 class="section-headline">MEET THE SECRET KEEPER.</h2>
+<svg class="hand-underline" viewBox="0 0 380 14" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M 4 8 Q 50 4, 95 7 T 190 8 Q 240 5, 290 8 T 376 7" stroke="#D4537E" stroke-width="3" fill="none" stroke-linecap="round"/></svg>
 <p class="section-body">
 Milton makes scratch-made brioche donuts because he can't stop coming up with new flavors. It started in his father-in-law's garage &mdash; deep-frying experiments on a camp stove until he got them right. It's still the same instinct: see a dessert, a memory, a person, and think <em>"how do I make that a donut?"</em> Family-owned in Tulsa, and quietly thrilled the city showed up.
 </p>
